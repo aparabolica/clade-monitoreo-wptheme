@@ -21,6 +21,8 @@
             <span class="third">a la Educación en América Latina y el Caribe</span>
           </h1>
         </div>
+        <?php
+        /*
         <nav>
           <?php wp_nav_menu(array('theme_location' => 'header_nav')); ?>
           <form class="search" action="<?php echo home_url('/'); ?>">
@@ -33,6 +35,8 @@
             </div>
           <?php endif; ?>
         </nav>
+        */
+        ?>
       </div>
     </div>
   </header>

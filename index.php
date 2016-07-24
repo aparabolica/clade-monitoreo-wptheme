@@ -12,7 +12,10 @@
         </div>
         <div class="section-content">
           <p>Ullamco in dolore consequat aliquip do quis aliqua cillum ad laboris duis non dolore pariatur est amet est. Cillum mollit aliqua dolor sunt nisi aute commodo. Aliqua mollit exercitation velit laborum aliqua ullamco ea officia veniam eu pariatur veniam officia incididunt labore sint.</p>
-          <p><a class="button" href="#">Leer más</a></p>
+          <p><a class="button" href="#">
+            <span class="fa fa-align-left"></span>
+            Leer más
+          </a></p>
         </div>
       </div>
     </div>
@@ -26,7 +29,10 @@
         </div>
         <div class="section-content">
           <p>Ullamco in dolore consequat aliquip do quis aliqua cillum ad laboris duis non dolore pariatur est amet est. Cillum mollit aliqua dolor sunt nisi aute commodo. Aliqua mollit exercitation velit laborum aliqua ullamco ea officia veniam eu pariatur veniam officia incididunt labore sint.</p>
-          <p><a class="button" href="#">Leer más</a></p>
+          <p><a class="button" href="#">
+            <span class="fa fa-align-left"></span>
+            Leer más
+          </a></p>
         </div>
       </div>
     </div>
@@ -40,7 +46,10 @@
         </div>
         <div class="section-content">
           <p>Ullamco in dolore consequat aliquip do quis aliqua cillum ad laboris duis non dolore pariatur est amet est. Cillum mollit aliqua dolor sunt nisi aute commodo. Aliqua mollit exercitation velit laborum aliqua ullamco ea officia veniam eu pariatur veniam officia incididunt labore sint.</p>
-          <p><a class="button" href="#">Leer más</a></p>
+          <p><a class="button" href="#">
+            <span class="fa fa-align-left"></span>
+            Leer más
+          </a></p>
         </div>
       </div>
     </div>

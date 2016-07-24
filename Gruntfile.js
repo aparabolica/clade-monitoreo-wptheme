@@ -26,6 +26,7 @@ module.exports = function(grunt) {
     },
     pot: {
       options: {
+        encoding: 'UTF-8',
         text_domain: 'clade',
         language: 'PHP',
         keywords: [

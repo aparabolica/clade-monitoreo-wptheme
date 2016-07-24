@@ -25,8 +25,9 @@ function clade_scripts() {
   wp_register_style('fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
   wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('normalize', 'skeleton', 'fontawesome'), '0.0.1');
 
+  wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
-  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids'), '0.0.1');
+  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'highcharts', 'fitvids'), '0.0.1');
 
   wp_enqueue_style('main');
   wp_enqueue_script('site');
@@ -56,4 +57,24 @@ function clade_get_countries() {
     'uy' => __('Uruguay', 'clade'),
     've' => __('Venezuela', 'clade')
   );
+}
+
+/**
+ * Get first paragraph from a WordPress post. Use inside the Loop.
+ *
+ * @return string
+ */
+function get_first_paragraph() {
+	global $post;
+
+	$str = apply_filters( 'the_content', get_the_content() );
+	$str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
+	$str = strip_tags($str, '<a><strong><em>');
+	return '<p>' . $str . '</p>';
+}
+
+function get_content_without_first_paragraph() {
+  global $post;
+  $content = apply_filters('the_content', $post->post_content);
+  return str_replace(get_first_paragraph(), '', $content);
 }
