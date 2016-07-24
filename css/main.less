@@ -230,7 +230,7 @@ input[type=submit] {
       background-size: cover;
       border-radius: 100%;
       border: 1px solid darken(@lessdarkbg, 5%);
-      box-shadow: .5rem .5rem .2rem rgba(0,0,0,0.1);
+      box-shadow: .5rem .5rem .2rem rgba(0,0,0,0.1), 0 0 0 15px rgba(255,255,255,0.05);
     }
     .header-label {
       // background: @orange;
@@ -358,6 +358,12 @@ input[type=submit] {
       border: 2px solid darken(@darkbg, 5%);
       box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
       box-sizing: border-box;
+      &:active,
+      &:focus,
+      &:hover {
+        // transform: translate(.1rem, .1rem);
+        box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+      }
     }
   }
 }
