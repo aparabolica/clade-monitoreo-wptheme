@@ -9,7 +9,7 @@
     <div class="container">
       <div class="eight columns">
         <div class="flag" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/flags/br.png);"></div>
-        <p class="header-label">Datos de</p><br/>
+        <p class="header-label">Análisis de</p><br/>
         <h1>Brasil</h1>
       </div>
       <div class="four columns">
@@ -59,138 +59,140 @@
                 <p>Id commodo velit proident cupidatat ullamco nulla minim elit dolore pariatur. Nostrud sit sint et anim excepteur eu pariatur mollit exercitation occaecat adipisicing velit excepteur in amet qui cillum.</p>
               </div>
               <div class="eight columns">
-                <div id="chart"></div>
-                <script type="text/javascript">
-                  (function($) {
-                    $('#chart').highcharts({
-                      chart: {
-                        type: 'column',
-                        backgroundColor: null,
-                        style: {
-                          fontFamily: 'Ubuntu, sans-serif'
-                        }
-                      },
-                      credits: {
-                        enabled: false
-                      },
-                      title: false,
-                      subtitle: false,
-                      legend: {
-                        enabled: false
-                      },
-                      xAxis: {
-                        type: 'category',
-                        labels: {
+                <div class="theme-content">
+                  <div id="chart"></div>
+                  <script type="text/javascript">
+                    (function($) {
+                      $('#chart').highcharts({
+                        chart: {
+                          type: 'column',
+                          backgroundColor: null,
                           style: {
-                            color: '#fff'
-                          }
-                        }
-                      },
-                      yAxis: {
-                        title: {
-                          text: 'Gasto público en educación com % del PIB',
-                          style: {
-                            color: 'rgba(255,255,255,0.5)'
+                            fontFamily: 'Ubuntu, sans-serif'
                           }
                         },
-                        labels: {
-                          style: {
-                            color: '#fff'
-                          }
+                        credits: {
+                          enabled: false
                         },
-                        minRange: 6,
-                        min: 0,
-                        plotLines: [{
-                          value: 6,
-                          color: '#E8431E',
-                          dashStyle: 'shortdash',
-                          width: 3,
-                          label: {
-                            text: 'Referencia para America Latina',
+                        title: false,
+                        subtitle: false,
+                        legend: {
+                          enabled: false
+                        },
+                        xAxis: {
+                          type: 'category',
+                          labels: {
                             style: {
+                              color: '#fff'
+                            }
+                          }
+                        },
+                        yAxis: {
+                          title: {
+                            text: 'Gasto público en educación com % del PIB',
+                            style: {
+                              color: 'rgba(255,255,255,0.5)'
+                            }
+                          },
+                          labels: {
+                            style: {
+                              color: '#fff'
+                            }
+                          },
+                          minRange: 6,
+                          min: 0,
+                          plotLines: [{
+                            value: 6,
+                            color: '#E8431E',
+                            dashStyle: 'shortdash',
+                            width: 3,
+                            label: {
+                              text: 'Referencia para America Latina',
+                              style: {
+                                color: '#fff',
+                                fontWeight: 500,
+                                textTransform: 'uppercase'
+                              }
+                            }
+                          }],
+                          gridLineColor: 'rgba(0,0,0,0.1)'
+                        },
+                        plotOptions: {
+                          series: {
+                            borderWidth: 0,
+                            dataLabels: {
+                              enabled: true,
+                              // format: '{point.y:.2f}',
                               color: '#fff',
-                              fontWeight: 500,
-                              textTransform: 'uppercase'
+                              style: {
+                                textShadow: false
+                              }
                             }
                           }
-                        }],
-                        gridLineColor: 'rgba(0,0,0,0.1)'
-                      },
-                      plotOptions: {
-                        series: {
-                          borderWidth: 0,
-                          dataLabels: {
-                            enabled: true,
-                            // format: '{point.y:.2f}',
-                            color: '#fff',
-                            style: {
-                              textShadow: false
-                            }
-                          }
-                        }
-                      },
-                      tooltip: {
-                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
-                      },
-                      series: [{
-                        name: 'Año',
-                        color: '#E8431E',
-                        // colorByPoint: true,
-                        groupPadding: 0,
-                        data: [{
-                          name: '1998',
-                          y: 4.87
-                        }, {
-                          name: '1999',
-                          y: 3.88
-                        }, {
-                          name: '2000',
-                          y: 4.01
-                        }, {
-                          name: '2001',
-                          y: 3.88
-                        }, {
-                          name: '2002',
-                          y: null
-                        }, {
-                          name: '2003',
-                          y: 4.01
-                        }, {
-                          name: '2004',
-                          y: 4.53
-                        }, {
-                          name: '2005',
-                          y: 4.95
-                        }, {
-                          name: '2006',
-                          y: 5.08
-                        }, {
-                          name: '2007',
-                          y: 5.40
-                        }, {
-                          name: '2008',
-                          y: 5.62
-                        }, {
-                          name: '2009',
-                          y: 5.82
-                        }, {
-                          name: '2010',
-                          y: null
-                        }, {
-                          name: '2011',
-                          y: null
-                        }, {
-                          name: '2012',
-                          y: null
-                        }, {
-                          name: '2013',
-                          y: null
+                        },
+                        tooltip: {
+                          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
+                        },
+                        series: [{
+                          name: 'Año',
+                          color: '#E8431E',
+                          // colorByPoint: true,
+                          groupPadding: 0,
+                          data: [{
+                            name: '1998',
+                            y: 4.87
+                          }, {
+                            name: '1999',
+                            y: 3.88
+                          }, {
+                            name: '2000',
+                            y: 4.01
+                          }, {
+                            name: '2001',
+                            y: 3.88
+                          }, {
+                            name: '2002',
+                            y: null
+                          }, {
+                            name: '2003',
+                            y: 4.01
+                          }, {
+                            name: '2004',
+                            y: 4.53
+                          }, {
+                            name: '2005',
+                            y: 4.95
+                          }, {
+                            name: '2006',
+                            y: 5.08
+                          }, {
+                            name: '2007',
+                            y: 5.40
+                          }, {
+                            name: '2008',
+                            y: 5.62
+                          }, {
+                            name: '2009',
+                            y: 5.82
+                          }, {
+                            name: '2010',
+                            y: null
+                          }, {
+                            name: '2011',
+                            y: null
+                          }, {
+                            name: '2012',
+                            y: null
+                          }, {
+                            name: '2013',
+                            y: null
+                          }]
                         }]
-                      }]
-                    })
-                  })(jQuery);
-                </script>
+                      })
+                    })(jQuery);
+                  </script>
+                </div>
               </div>
             </div>
           </div>
@@ -647,13 +649,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="eight columns offset-by-two">
-        <p>Excepteur dolor aliqua magna excepteur officia pariatur do proident cillum. Ullamco velit voluptate consequat sunt dolore enim elit culpa irure fugiat. Enim ullamco incididunt eu mollit laboris exercitation consequat.</p>
-        <p>Id commodo velit proident cupidatat ullamco nulla minim elit dolore pariatur. Nostrud sit sint et anim excepteur eu pariatur mollit exercitation occaecat adipisicing velit excepteur in amet qui cillum. In occaecat nulla officia ut esse duis voluptate labore occaecat minim minim. Elit labore cupidatat mollit adipisicing adipisicing et eu. Quis culpa cupidatat ipsum eiusmod sunt labore non. Lorem veniam incididunt anim pariatur Lorem sunt cillum cillum irure nisi est nostrud nisi qui incididunt. Tempor proident consequat in ut et amet aliqua id excepteur in est labore mollit.</p>
-        <p>Est tempor irure culpa ullamco in ullamco eiusmod dolor in ad adipisicing esse sunt exercitation et ad. Ut id deserunt labore exercitation laboris incididunt fugiat culpa nulla ea tempor dolore irure culpa. Commodo non proident fugiat eu sint mollit et est deserunt ipsum enim nostrud aliqua aliquip. Dolor anim ipsum adipisicing magna nisi esse commodo aliqua elit aliqua in cillum sunt labore minim pariatur. Laboris nisi nisi culpa aliqua est occaecat excepteur et ullamco commodo fugiat id commodo est commodo nostrud excepteur. Veniam incididunt excepteur cillum officia reprehenderit cupidatat in duis cillum commodo mollit commodo ipsum. Eiusmod aute adipisicing ad dolore laboris eiusmod officia in velit officia nostrud in. Ipsum dolor aliquip ea anim proident et voluptate ex irure.</p>
       </div>
     </div>
   </section>

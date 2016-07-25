@@ -60,7 +60,7 @@
     <div class="twelve columns">
       <div class="page-section">
         <div class="section-title">
-          <h2>Datos por país</h2>
+          <h2>Análisis por país</h2>
         </div>
         <div class="section-content">
           <?php

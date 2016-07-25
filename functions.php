@@ -20,10 +20,11 @@ add_action('after_setup_theme', 'clade_setup_theme');
 
 function clade_scripts() {
 
+  wp_register_style('webfonts', 'https://fonts.googleapis.com/css?family=Codystar|Ubuntu:300,400,400i,500,700');
   wp_register_style('normalize', get_template_directory_uri() . '/assets/skeleton/css/normalize.css');
   wp_register_style('skeleton', get_template_directory_uri() . '/assets/skeleton/css/skeleton.css');
   wp_register_style('fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
-  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('normalize', 'skeleton', 'fontawesome'), '0.0.1');
+  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.1');
 
   wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
@@ -73,6 +74,11 @@ function get_first_paragraph() {
 	return '<p>' . $str . '</p>';
 }
 
+/**
+ * Get WordPress post content without the first paragraph. Use inside the Loop.
+ *
+ * @return string
+ */
 function get_content_without_first_paragraph() {
   global $post;
   $content = apply_filters('the_content', $post->post_content);
