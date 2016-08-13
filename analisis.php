@@ -6,7 +6,7 @@
 $countries = clade_get_countries();
 ?>
 <?php get_header(); ?>
-<article id="country-page" class="single-page">
+<article id="analisis" class="single-page">
   <header class="page-header">
     <div class="container">
       <div class="twelve columns">
@@ -16,7 +16,6 @@ $countries = clade_get_countries();
           <a href="#">Dimension de equidad</a>
           <a href="#">Analisis agregado</a>
         </nav>
-        <p class="header-label">Datos de</p><br/>
         <h1>Análisis</h1>
       </div>
       <div class="four columns">

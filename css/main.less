@@ -14,6 +14,15 @@ h3,
 h4,
 h5 {
   letter-spacing: 0;
+  &.h {
+    background: transparent;
+    color: inherit;
+    span {
+      color: #fff;
+      background: @orange;
+      padding: .4rem;
+    }
+  }
 }
 
 .container {
@@ -348,11 +357,11 @@ input[type=submit] {
       display: inline-block;
       margin: 0;
       font-weight: 500;
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
     .page-header-nav {
       float: right;
-      margin: 8rem 0 0;
+      margin: 3rem 0 0;
       text-transform: lowercase;
       font-weight: 500;
       a {
@@ -386,7 +395,7 @@ input[type=submit] {
       text-transform: lowercase;
     }
     aside  {
-      margin-top: 5.5rem;
+      margin-top: 4rem;
     }
   }
   .page-welcome,
@@ -426,7 +435,11 @@ input[type=submit] {
     }
   }
   .page-content {
+    background: darken(@lessdarkbg, 5%);
     font-size: 1.2em;
+    &.list-page {
+      background: lighten(@darkbg, 5%) url(../img/bg.png) top center no-repeat;
+    }
   }
 }
 
@@ -439,7 +452,6 @@ input[type=submit] {
 
 .theme-item {
   background: @lessdarkbg;
-  border-bottom: 10px solid @darkbg;
   color: #fff;
   padding: 4rem 0;
   margin: 0;
@@ -613,6 +625,42 @@ input[type=submit] {
   }
 }
 
+.analisis-theme-groups {
+  margin: 0 0 6rem;
+  .theme-groups {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    li {
+      box-sizing: border-box;
+      margin: 0 0 2%;
+      padding: 2%;
+      flex: 1 1 50%;
+      article {
+        background: darken(@lessdarkbg, 5%);
+        padding: 2rem;
+        transform: rotate(-.8deg);
+        border-bottom: 10px solid @orange;
+        > * {
+          transform: rotate(.8deg);
+        }
+        h3 {
+          font-size: 1.4em;
+          font-weight: 600;
+          color: #fff;
+          text-transform: uppercase;
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 .country-list {
   list-style: none;
   padding: 0;
@@ -634,12 +682,20 @@ input[type=submit] {
     border: 2px solid darken(@darkbg, 5%);
     box-shadow: .25rem .25rem .25rem rgba(0,0,0,0.2);
     box-sizing: border-box;
+    position: relative;
     &.active,
     &:active,
     &:focus,
     &:hover {
       // transform: translate(.1rem, .1rem);
       box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+    }
+    a {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      top: 0;
     }
   }
 }
@@ -674,14 +730,32 @@ input[type=submit] {
 }
 
 #methodology {
-  background: @lessdarkbg;
-  border-top: 10px solid #E8431E;
   color: #fff;
   padding: 6rem 0;
   h2 {
     padding: 0 2rem;
     display: block;
     text-align: center;
+  }
+  .method {
+    margin: 0 0 4rem;
+    .method-description {
+      background: @lessdarkbg;
+      padding: 2rem;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0 30px 30px 0;
+        width: 0;
+        height: 0;
+        z-index: 2;
+        border-color: transparent @lessdarkbg transparent transparent;
+        top: 10rem;
+        left: -20px;
+      }
+    }
   }
 }
 
