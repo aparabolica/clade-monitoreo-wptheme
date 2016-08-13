@@ -9,7 +9,13 @@ $countries = clade_get_countries();
 <article id="country-page" class="single-page">
   <header class="page-header">
     <div class="container">
-      <div class="eight columns">
+      <div class="twelve columns">
+        <nav class="page-header-nav">
+          <a href="#" class="active">Dimension de esfuerzo</a>
+          <a href="#">Dimension de disponibilidad</a>
+          <a href="#">Dimension de equidad</a>
+          <a href="#">Analisis agregado</a>
+        </nav>
         <p class="header-label">Datos de</p><br/>
         <h1>Análisis</h1>
       </div>
@@ -25,13 +31,13 @@ $countries = clade_get_countries();
       </div>
     </div>
   </header>
-  <section class="page-welcome">
+  <!-- <section class="page-welcome">
     <div class="container">
       <div class="nine columns">
         <p>Ut eiusmod in nostrud duis reprehenderit mollit sint mollit est id commodo quis ex exercitation sit enim anim. Ex excepteur Lorem consequat voluptate ea nulla voluptate ut nulla consequat. Ut ut laborum ex dolor ea dolor duis laborum occaecat qui nostrud.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="page-content theme-group">
     <div class="theme-group">
       <div class="page-section">
@@ -39,6 +45,17 @@ $countries = clade_get_countries();
           <div class="twelve columns">
             <div class="section-title">
               <h2 class="h"><span>Dimension</span> de esfuerzo</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-intro">
+          <div class="container">
+            <div class="twelve columns">
+              <div class="section-intro-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate, eros vitae ornare dapibus, nibh justo feugiat magna, ut mattis velit diam vel nunc. Donec suscipit tempor purus eget hendrerit. Mauris in urna in libero consequat egestas. Mauris eu augue a libero molestie efficitur a eu sem. Suspendisse consequat laoreet condimentum. Pellentesque condimentum dolor non ligula faucibus rutrum. Morbi rhoncus mollis convallis. Etiam consequat nunc nisi, et porta massa pulvinar eget. Ut eget tincidunt eros. Quisque ullamcorper odio et volutpat laoreet. In et molestie magna. Sed dictum eu magna et lobortis.</p>
+
+                <p>Proin tempor tortor ex, pulvinar elementum ligula pulvinar consectetur. Sed et risus tristique, convallis augue dictum, ultricies magna. Proin orci urna, vulputate eget iaculis eget, malesuada rhoncus ante. Proin sit amet placerat lorem. Quisque auctor mi sit amet dictum imperdiet. Aliquam dapibus blandit nulla. Mauris consectetur ligula in lobortis pharetra. Mauris malesuada lacus dui, id tempor magna cursus in. Phasellus posuere, urna non molestie volutpat, ipsum quam egestas augue, tincidunt fringilla tellus augue non metus. Aenean molestie viverra lacus, in vestibulum lorem condimentum a. Sed eget enim sit amet augue faucibus malesuada vel quis velit. Proin non rutrum nisl, eu fringilla massa. Ut vitae facilisis quam. Pellentesque dapibus felis eget mauris dictum pretium.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -211,7 +228,7 @@ $countries = clade_get_countries();
                     </script>
                   </div>
                 </div>
-                <div class="theme-content theme-02" style="display: none;">
+                <div class="theme-content theme-02" style="display:none;">
                   <h4>Gasto público en educación</h4>
                   <?php get_template_part('parts/table'); ?>
                 </div>
@@ -366,7 +383,7 @@ $countries = clade_get_countries();
                     </div>
                   </div>
                 </div>
-                <div class="theme-content theme-02">
+                <div class="theme-content theme-02" style="display: none;">
                   <h4>Gasto público en educación</h4>
                   <nav class="tree-nav">
                     <div class="clearfix">
@@ -396,7 +413,7 @@ $countries = clade_get_countries();
                     </ul>
                   </div>
                 </div>
-                <div class="theme-content theme-02" style="display:none;">
+                <div class="theme-content theme-02">
                   <h4>Gasto público en educación</h4>
                   <nav class="tree-nav">
                     <div class="clearfix">
@@ -542,25 +559,6 @@ $countries = clade_get_countries();
           </div>
       </div>
     </div>
-    <section id="countries">
-      <div class="container">
-        <div class="twelve columns">
-          <div class="page-section">
-            <div class="section-title">
-              <h2>Análisis por país</h2>
-            </div>
-            <div class="section-content">
-              <ul class="country-list">
-                <?php foreach($countries as $c_key => $country) : ?>
-                  <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/flags/<?php echo $c_key; ?>.png);" title="<?php echo $country; ?>">
-                  </li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
 </article>
 <?php get_footer(); ?>

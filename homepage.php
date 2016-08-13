@@ -1,3 +1,9 @@
+<?php
+/*
+ * Template name: Home
+ */
+?>
+
 <?php get_header(); ?>
 
 <section id="intro">

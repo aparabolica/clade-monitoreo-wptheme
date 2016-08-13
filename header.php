@@ -16,15 +16,17 @@
       <div class="twelve columns">
         <div class="brand">
           <h1>
-            <span class="first">Sistema de Monitoreo</span><br/>
-            <span class="second">del Financiamiento<br/> del Derecho Humano</span><br/>
-            <span class="third">a la Educación en América Latina y el Caribe</span>
+            <a href="<?php echo home_url('/'); ?>">
+              <span class="first">Sistema de Monitoreo</span><br/>
+              <span class="second">del Financiamiento<br/> del Derecho Humano</span><br/>
+              <span class="third">a la Educación en América Latina y el Caribe</span>
+            </a>
           </h1>
         </div>
-        <?php
-        /*
         <nav>
           <?php wp_nav_menu(array('theme_location' => 'header_nav')); ?>
+          <?php
+          /*
           <form class="search" action="<?php echo home_url('/'); ?>">
             <a href="#"><span class="fa fa-search"></span></a>
             <input type="text" name="s" placeholder="<?php _e('Search anything...', 'arp'); ?>" value="<?php if(isset($_GET['s'])) echo $_GET['s']; ?>" />
@@ -34,9 +36,13 @@
               <?php echo qtranxf_generateLanguageSelectCode('image'); ?>
             </div>
           <?php endif; ?>
+          */
+          ?>
         </nav>
-        */
-        ?>
+        <div class="clade">
+          <img class="vertical" src="<?php echo get_template_directory_uri(); ?>/img/logo-clade-vertical.png" />
+          <img class="horizontal" src="<?php echo get_template_directory_uri(); ?>/img/logo-clade-horizontal.png" />
+        </div>
       </div>
     </div>
   </header>
