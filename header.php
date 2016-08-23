@@ -18,8 +18,8 @@
           <h1>
             <a href="<?php echo home_url('/'); ?>">
               <span class="first">Sistema de Monitoreo</span><br/>
-              <span class="second">del Financiamiento<br/> del Derecho Humano</span><br/>
-              <span class="third">a la Educación en América Latina y el Caribe</span>
+              <span class="second">del Financiamiento<br/> del Derecho Humano a la Educación</span><br/>
+              <span class="third">en América Latina y el Caribe</span>
             </a>
           </h1>
         </div>

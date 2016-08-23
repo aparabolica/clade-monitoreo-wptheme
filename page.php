@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-  <article id="country-page" class="single-page">
+  <article id="page" class="single-page">
     <header class="page-header">
       <div class="container">
         <div class="twelve columns">
