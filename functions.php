@@ -1,5 +1,51 @@
 <?php
 
+/*
+ * Required plugins
+ */
+require_once(TEMPLATEPATH . '/inc/class-tgm-plugin-activation.php');
+function clade_register_required_plugins() {
+  $plugins = array();
+  if(defined('ACF_PRO_KEY')) {
+    $plugins[] = array(
+      'name' => 'Advanced Custom Fields PRO',
+      'slug' => 'advanced-custom-fields-pro',
+      'required' => true,
+      'force_activation' => true,
+      'source' => 'https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=' . ACF_PRO_KEY
+    );
+    $plugins[] = array(
+      'name' => 'ACF: Advanced Taxonomy Selector',
+      'slug' => 'acf-advanced-taxonomy-selector',
+      'required' => true,
+      'force_activation' => true
+    );
+    $plugins[] = array(
+      'name' => 'Advanced Custom Fields: Tag It Field',
+      'slug' => 'advanced-custom-fields-tag-it',
+      'required' => true,
+      'force_activation' => true
+    );
+    $plugins[] = array(
+      'name' => 'Advanced Custom Fields: Font Awesome',
+      'slug' => 'advanced-custom-fields-font-awesome',
+      'required' => true,
+      'force_activation' => true
+    );
+  }
+  $options = array(
+    'default_path'  => '',
+    'menu'      => 'clade-install-plugins',
+    'has_notices'  => true,
+    'dismissable'  => true,
+    'dismiss_msg'  => '',
+    'is_automatic'  => false,
+    'message'    => ''
+  );
+  tgmpa($plugins, $options);
+}
+add_action('tgmpa_register', 'clade_register_required_plugins');
+
 function clade_setup_theme() {
 
   load_theme_textdomain('clade', get_template_directory() . '/languages');
@@ -27,8 +73,10 @@ function clade_scripts() {
   wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.1');
 
   wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
+  wp_register_script('highcharts.data', get_template_directory_uri() . '/assets/highcharts/modules/data.js', array('highcharts'));
+  wp_register_script('highcharts.export', get_template_directory_uri() . '/assets/highcharts/modules/exporting.js', array('highcharts'));
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
-  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'highcharts', 'fitvids'), '0.0.1');
+  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'highcharts', 'highcharts.data', 'highcharts.export', 'fitvids'), '0.0.1');
 
   wp_enqueue_style('main');
   wp_enqueue_script('site');
@@ -59,6 +107,14 @@ function clade_get_countries() {
     've' => __('Venezuela', 'clade')
   );
 }
+
+/**
+ * Include features
+ */
+require_once(TEMPLATEPATH . '/inc/data-collections.php');
+require_once(TEMPLATEPATH . '/inc/themes.php');
+require_once(TEMPLATEPATH . '/inc/countries.php');
+require_once(TEMPLATEPATH . '/inc/theme-query.php');
 
 /**
  * Get first paragraph from a WordPress post. Use inside the Loop.

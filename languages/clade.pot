@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-23 16:48-0300\n"
+"POT-Creation-Date: 2016-09-23 20:50-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,90 +17,327 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:14
+#: functions.php:54
 msgid "Header navigation"
 msgstr ""
 
-#: functions.php:15
+#: functions.php:55
 msgid "Footer navigation"
 msgstr ""
 
-#: functions.php:40
+#: functions.php:82
 msgid "Argentina"
 msgstr ""
 
-#: functions.php:41
+#: functions.php:83
 msgid "Bolivia"
 msgstr ""
 
-#: functions.php:42
+#: functions.php:84
 msgid "Brazil"
 msgstr ""
 
-#: functions.php:43
+#: functions.php:85
 msgid "Chile"
 msgstr ""
 
-#: functions.php:44
+#: functions.php:86
 msgid "Colombia"
 msgstr ""
 
-#: functions.php:45
+#: functions.php:87
 msgid "Costa Rica"
 msgstr ""
 
-#: functions.php:46
+#: functions.php:88
 msgid "Cuba"
 msgstr ""
 
-#: functions.php:47
+#: functions.php:89
 msgid "Ecuador"
 msgstr ""
 
-#: functions.php:48
+#: functions.php:90
 msgid "El Salvador"
 msgstr ""
 
-#: functions.php:49
+#: functions.php:91
 msgid "Guatemala"
 msgstr ""
 
-#: functions.php:50
+#: functions.php:92
 msgid "Haiti"
 msgstr ""
 
-#: functions.php:51
+#: functions.php:93
 msgid "Honduras"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:94
 msgid "México"
 msgstr ""
 
-#: functions.php:53
+#: functions.php:95
 msgid "Nicaragua"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:96
 msgid "Panamá"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:97
 msgid "Paraguay"
 msgstr ""
 
-#: functions.php:56
+#: functions.php:98
 msgid "Peru"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:99
 msgid "Republica Dominicana"
 msgstr ""
 
-#: functions.php:58
+#: functions.php:100
 msgid "Uruguay"
 msgstr ""
 
-#: functions.php:59
+#: functions.php:101
 msgid "Venezuela"
+msgstr ""
+
+#: inc/countries.php:17
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr ""
+
+#: inc/countries.php:18
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr ""
+
+#: inc/countries.php:19
+msgid "Search countries"
+msgstr ""
+
+#: inc/countries.php:20
+msgid "All countries"
+msgstr ""
+
+#: inc/countries.php:21
+msgid "Parent country"
+msgstr ""
+
+#: inc/countries.php:22
+msgid "Parent country:"
+msgstr ""
+
+#: inc/countries.php:23
+msgid "Edit country"
+msgstr ""
+
+#: inc/countries.php:24
+msgid "Update country"
+msgstr ""
+
+#: inc/countries.php:25
+msgid "Add new country"
+msgstr ""
+
+#: inc/countries.php:26
+msgid "New country name"
+msgstr ""
+
+#: inc/countries.php:27
+msgid "Countries"
+msgstr ""
+
+#: inc/data-collections.php:16
+msgctxt "post type general name"
+msgid "Data collections"
+msgstr ""
+
+#: inc/data-collections.php:17
+msgctxt "post type singular name"
+msgid "Data collection"
+msgstr ""
+
+#: inc/data-collections.php:18
+msgctxt "admin menu"
+msgid "Data collections"
+msgstr ""
+
+#: inc/data-collections.php:19
+msgctxt "add new on admin bar"
+msgid "Data collection"
+msgstr ""
+
+#: inc/data-collections.php:20
+msgctxt "data collection"
+msgid "Add new"
+msgstr ""
+
+#: inc/data-collections.php:21
+msgid "Add new data collection"
+msgstr ""
+
+#: inc/data-collections.php:22
+msgid "New data collection"
+msgstr ""
+
+#: inc/data-collections.php:23
+msgid "Edit data collection"
+msgstr ""
+
+#: inc/data-collections.php:24
+msgid "View data collection"
+msgstr ""
+
+#: inc/data-collections.php:25
+msgid "All data collections"
+msgstr ""
+
+#: inc/data-collections.php:26
+msgid "Search data collections"
+msgstr ""
+
+#: inc/data-collections.php:27
+msgid "Parent data collections:"
+msgstr ""
+
+#: inc/data-collections.php:28
+msgid "No data collections found."
+msgstr ""
+
+#: inc/data-collections.php:29
+msgid "No data collections found in trash."
+msgstr ""
+
+#: inc/data-collections.php:33
+msgid "CLADE Data Collections"
+msgstr ""
+
+#: inc/themes.php:17
+msgctxt "post type general name"
+msgid "Themes"
+msgstr ""
+
+#: inc/themes.php:18
+msgctxt "post type singular name"
+msgid "Theme"
+msgstr ""
+
+#: inc/themes.php:19
+msgctxt "admin menu"
+msgid "Themes"
+msgstr ""
+
+#: inc/themes.php:20
+msgctxt "add new on admin bar"
+msgid "Theme"
+msgstr ""
+
+#: inc/themes.php:21
+msgctxt "theme"
+msgid "Add new"
+msgstr ""
+
+#: inc/themes.php:22
+msgid "Add new theme"
+msgstr ""
+
+#: inc/themes.php:23
+msgid "New theme"
+msgstr ""
+
+#: inc/themes.php:24
+msgid "Edit theme"
+msgstr ""
+
+#: inc/themes.php:25
+msgid "View theme"
+msgstr ""
+
+#: inc/themes.php:26
+msgid "All themes"
+msgstr ""
+
+#: inc/themes.php:27
+msgid "Search themes"
+msgstr ""
+
+#: inc/themes.php:28
+msgid "Parent themes:"
+msgstr ""
+
+#: inc/themes.php:29
+msgid "No themes found."
+msgstr ""
+
+#: inc/themes.php:30
+msgid "No themes found in trash."
+msgstr ""
+
+#: inc/themes.php:34 inc/themes.php:69
+msgid "CLADE Theme Groups"
+msgstr ""
+
+#: inc/themes.php:52
+msgctxt "post type general name"
+msgid "Theme groups"
+msgstr ""
+
+#: inc/themes.php:53
+msgctxt "post type singular name"
+msgid "Theme group"
+msgstr ""
+
+#: inc/themes.php:54
+msgctxt "admin menu"
+msgid "Theme groups"
+msgstr ""
+
+#: inc/themes.php:55
+msgctxt "add new on admin bar"
+msgid "Theme group"
+msgstr ""
+
+#: inc/themes.php:56
+msgctxt "theme group"
+msgid "Add new"
+msgstr ""
+
+#: inc/themes.php:57
+msgid "Add new theme group"
+msgstr ""
+
+#: inc/themes.php:58
+msgid "New theme group"
+msgstr ""
+
+#: inc/themes.php:59
+msgid "Edit theme group"
+msgstr ""
+
+#: inc/themes.php:60
+msgid "View theme group"
+msgstr ""
+
+#: inc/themes.php:61
+msgid "All theme groups"
+msgstr ""
+
+#: inc/themes.php:62
+msgid "Search theme groups"
+msgstr ""
+
+#: inc/themes.php:63
+msgid "Parent theme groups:"
+msgstr ""
+
+#: inc/themes.php:64
+msgid "No theme groups found."
+msgstr ""
+
+#: inc/themes.php:65
+msgid "No theme groups found in trash."
 msgstr ""
