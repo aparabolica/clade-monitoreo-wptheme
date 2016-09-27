@@ -43,7 +43,7 @@
               <?php
               $countries = clade_get_countries();
               ?>
-              <ul class="country-list">
+              <ul class="term-list">
                 <?php foreach($countries as $c_key => $country) : ?>
                   <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/flags/<?php echo $c_key; ?>.png);" title="<?php echo $country; ?>">
                     <a href="<?php echo home_url('/brasil/'); ?>"></a>

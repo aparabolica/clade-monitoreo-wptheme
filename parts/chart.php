@@ -5,19 +5,24 @@ if($data_query->have_posts()) :
   while($data_query->have_posts()) :
     $data_query->the_post();
     $csv = get_field('csv');
+    $plotline_number = get_field('plot_line_number');
+    $plotline_text = get_field('plot_line_text');
     ?>
-    <div id="chart_<?php the_ID(); ?>"></div>
+    <div id="chart_<?php the_ID(); ?>" class="clade-chart"></div>
     <script type="text/javascript">
       (function($) {
         $.get('<?php echo $csv['url']; ?>', function(csv) {
-          cladeChart({
+          var chartConfig = {
             element: '#chart_<?php the_ID(); ?>',
             data: csv,
             title: '<?php echo $theme_title; ?>',
             subtitle: '<?php echo $term->name; ?>',
-            plotline: <?php echo get_field('plot_line_number'); ?>,
-            plotlineText: '<?php echo get_field('plot_line_text'); ?>'
-          });
+          };
+          <?php if($plotline_number) : ?>
+            chartConfig.plotline = <?php echo $plotline_number ?>;
+            chartConfig.plotlineText = '<?php echo $plotline_text; ?>';
+          <?php endif; ?>
+          cladeChart(chartConfig);
         });
       })(jQuery);
     </script>

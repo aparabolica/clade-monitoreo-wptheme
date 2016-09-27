@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-23 20:50-0300\n"
+"POT-Creation-Date: 2016-09-27 18:18-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,91 +17,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:54
+#: functions.php:60
 msgid "Header navigation"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:61
 msgid "Footer navigation"
 msgstr ""
 
-#: functions.php:82
+#: functions.php:100
 msgid "Argentina"
 msgstr ""
 
-#: functions.php:83
+#: functions.php:101
 msgid "Bolivia"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:102
 msgid "Brazil"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:103
 msgid "Chile"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:104
 msgid "Colombia"
 msgstr ""
 
-#: functions.php:87
+#: functions.php:105
 msgid "Costa Rica"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:106
 msgid "Cuba"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:107
 msgid "Ecuador"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:108
 msgid "El Salvador"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:109
 msgid "Guatemala"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:110
 msgid "Haiti"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:111
 msgid "Honduras"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:112
 msgid "México"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:113
 msgid "Nicaragua"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:114
 msgid "Panamá"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:115
 msgid "Paraguay"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:116
 msgid "Peru"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:117
 msgid "Republica Dominicana"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:118
 msgid "Uruguay"
 msgstr ""
 
-#: functions.php:101
+#: functions.php:119
 msgid "Venezuela"
 msgstr ""
 
@@ -151,69 +151,135 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: inc/data-collections.php:16
+#: inc/data-collections.php:27
+msgid "Theme"
+msgstr ""
+
+#: inc/data-collections.php:31
+msgid "Files"
+msgstr ""
+
+#: inc/data-collections.php:70
 msgctxt "post type general name"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:17
+#: inc/data-collections.php:71
 msgctxt "post type singular name"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:18
+#: inc/data-collections.php:72
 msgctxt "admin menu"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:19
+#: inc/data-collections.php:73
 msgctxt "add new on admin bar"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:20
+#: inc/data-collections.php:74
 msgctxt "data collection"
 msgid "Add new"
 msgstr ""
 
-#: inc/data-collections.php:21
+#: inc/data-collections.php:75
 msgid "Add new data collection"
 msgstr ""
 
-#: inc/data-collections.php:22
+#: inc/data-collections.php:76
 msgid "New data collection"
 msgstr ""
 
-#: inc/data-collections.php:23
-msgid "Edit data collection"
+#: inc/data-collections.php:77
+msgid "Edit data collection item"
 msgstr ""
 
-#: inc/data-collections.php:24
+#: inc/data-collections.php:78
 msgid "View data collection"
 msgstr ""
 
-#: inc/data-collections.php:25
+#: inc/data-collections.php:79
 msgid "All data collections"
 msgstr ""
 
-#: inc/data-collections.php:26
+#: inc/data-collections.php:80
 msgid "Search data collections"
 msgstr ""
 
-#: inc/data-collections.php:27
+#: inc/data-collections.php:81
 msgid "Parent data collections:"
 msgstr ""
 
-#: inc/data-collections.php:28
+#: inc/data-collections.php:82
 msgid "No data collections found."
 msgstr ""
 
-#: inc/data-collections.php:29
+#: inc/data-collections.php:83
 msgid "No data collections found in trash."
 msgstr ""
 
-#: inc/data-collections.php:33
+#: inc/data-collections.php:87
 msgid "CLADE Data Collections"
+msgstr ""
+
+#: inc/data-collections.php:107
+msgctxt "taxonomy general name"
+msgid "Data categories"
+msgstr ""
+
+#: inc/data-collections.php:108
+msgctxt "taxonomy singular name"
+msgid "Data category"
+msgstr ""
+
+#: inc/data-collections.php:109
+msgid "Search data categories"
+msgstr ""
+
+#: inc/data-collections.php:110
+msgid "Popular data categories"
+msgstr ""
+
+#: inc/data-collections.php:111
+msgid "All data categories"
+msgstr ""
+
+#: inc/data-collections.php:114
+msgid "Edit data category"
+msgstr ""
+
+#: inc/data-collections.php:115
+msgid "Update data category"
+msgstr ""
+
+#: inc/data-collections.php:116
+msgid "Add New data category"
+msgstr ""
+
+#: inc/data-collections.php:117
+msgid "New data category Name"
+msgstr ""
+
+#: inc/data-collections.php:118
+msgid "Separate writers with commas"
+msgstr ""
+
+#: inc/data-collections.php:119
+msgid "Add or remove writers"
+msgstr ""
+
+#: inc/data-collections.php:120
+msgid "Choose from the most used writers"
+msgstr ""
+
+#: inc/data-collections.php:121
+msgid "No writers found."
+msgstr ""
+
+#: inc/data-collections.php:122
+msgid "Data categories"
 msgstr ""
 
 #: inc/themes.php:17

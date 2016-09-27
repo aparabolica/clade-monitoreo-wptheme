@@ -106,6 +106,10 @@ input[type=submit] {
   }
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .button-group {
   display: table;
   width: 100%;
@@ -219,6 +223,9 @@ input[type=submit] {
 }
 
 // Custom class for highlighted ANALISIS menu item when accessing single theme group
+.single-theme #masthead nav ul li.menu-item-object-theme a,
+.single-theme #masthead nav ul li.menu-item-object-theme-group a,
+.single-theme-group #masthead nav ul li.menu-item-object-theme a,
 .single-theme-group #masthead nav ul li.menu-item-object-theme-group a {
   border-top: 5px solid @orange;
   color: @orange;
@@ -461,7 +468,7 @@ input[type=submit] {
   margin-bottom: -2rem;
 }
 
-.theme-item {
+.theme-group-item {
   background: @lessdarkbg;
   color: #fff;
   padding: 4rem 0;
@@ -556,7 +563,6 @@ input[type=submit] {
     }
     h4 {
       font-weight: 500;
-      text-transform: lowercase;
       display: inline-block;
       position: relative;
       margin: 2rem 0 3rem 2rem;
@@ -572,7 +578,6 @@ input[type=submit] {
       }
     }
     .general-download {
-      margin-top: 2rem;
       margin-bottom: -5rem;
       text-align: center;
       p {
@@ -585,20 +590,21 @@ input[type=submit] {
       }
     }
     .tree-nav {
-      // margin: 0 2rem 2rem;
       padding: 2rem 4rem;
-      margin: 0 -2rem 2rem;
+      margin: -2rem -2rem 2rem;
+      position: relative;
+      z-index: 2;
       background: lighten(@lessdarkbg, 10%);
+      text-align: center;
       .tree-item {
         font-size: .7em;
-        float: left;
         background: darken(@lessdarkbg, 5%);
         border-bottom: 5px solid darken(@lessdarkbg, 10%);
         border-radius: 8px;
-        // padding: 1rem .5rem 1rem 1.5rem;
         margin-right: 1rem;
         margin: 0 1rem 1rem 0;
         overflow: hidden;
+        display: inline-block;
         a {
           padding: 1rem 1.5rem;
           color: #fff;
@@ -611,14 +617,21 @@ input[type=submit] {
         }
       }
     }
-    .country-list {
+    .term-list {
       li {
         margin: 4%;
         width: 17%;
         padding-bottom: calc(~"17% - 4px");
       }
+      &.full {
+        li {
+          width: 7%;
+          margin: 1.5%;
+          padding-bottom: calc(~"7% - 4px");
+        }
+      }
     }
-    // .country-list {
+    // .term-list {
     //   margin-top: 4rem;
     // }
     table {
@@ -628,9 +641,23 @@ input[type=submit] {
       td {
         border-color: rgba(255,255,255,0.2);
       }
+      th {
+        padding-left: 0;
+        &.sub {
+          font-size: .8em;
+          font-weight: 500;
+          color: #eee;
+        }
+      }
+      thead {
+        th {
+          text-align: center;
+        }
+      }
       a.button {
         width: auto;
-        display: inline-block;
+        display: block;
+        margin: auto;
       }
     }
   }
@@ -680,7 +707,7 @@ input[type=submit] {
   }
 }
 
-.country-list {
+.term-list {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem;
