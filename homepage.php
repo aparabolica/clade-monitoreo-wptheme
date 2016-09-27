@@ -20,7 +20,7 @@
             </a>
           </span>
           <span class="group-item">
-            <a class="button" href="<?php echo home_url('/analisis'); ?>">
+            <a class="button" href="<?php echo get_post_type_archive_link('theme-group'); ?>">
               <span class="fa fa-bar-chart"></span>
               Analisis
             </a>
