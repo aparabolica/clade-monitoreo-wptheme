@@ -41,12 +41,17 @@
             </div>
             <div class="section-content">
               <?php
-              $countries = clade_get_countries();
+              $countries = get_terms('country', array(
+                'hide_empty' => false
+              ));
               ?>
               <ul class="term-list">
-                <?php foreach($countries as $c_key => $country) : ?>
-                  <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/flags/<?php echo $c_key; ?>.png);" title="<?php echo $country; ?>">
-                    <a href="<?php echo home_url('/brasil/'); ?>"></a>
+                <?php
+                foreach($countries as $country) :
+                  $thumb = get_field('thumbnail', 'country_' . $country->term_id);
+                  ?>
+                  <li style="background-image: url(<?php echo $thumb; ?>);" title="<?php echo $country->term_title; ?>">
+                    <a href="<?php echo get_term_link($country); ?>" title="<?php $country->name; ?>"></a>
                   </li>
                 <?php endforeach; ?>
               </ul>
