@@ -1,6 +1,7 @@
 <?php
-// ** FIX ** Support custom chart color based on theme
-global $data_query, $theme_title, $term;
+global $data_query, $theme_id, $theme_title, $term;
+// $color = get_field('color', $theme_id);
+$color = '#E8431E';
 if($data_query->have_posts()) :
   while($data_query->have_posts()) :
     $data_query->the_post();
@@ -14,6 +15,7 @@ if($data_query->have_posts()) :
         $.get('<?php echo $csv['url']; ?>', function(csv) {
           var chartConfig = {
             element: '#chart_<?php the_ID(); ?>',
+            color: '<?php echo $color; ?>',
             data: csv,
             title: '<?php echo $theme_title; ?>',
             subtitle: '<?php echo $term->name; ?>',

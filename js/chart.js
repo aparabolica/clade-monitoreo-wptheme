@@ -58,7 +58,7 @@
       },
       series: [{
         name: 'Año',
-        color: '#E8431E',
+        color: config.color,
         // colorByPoint: true,
         groupPadding: 0
       }],
@@ -100,7 +100,7 @@
       chart.yAxis.minRange = config.plotline;
       chart.yAxis.plotLines = [{
         value: config.plotline,
-        color: '#E8431E',
+        color: config.color,
         dashStyle: 'shortdash',
         width: 3,
         label: {
@@ -115,7 +115,7 @@
       // exporting plot line
       chart.exporting.chartOptions.yAxis.plotLines = [{
         value: config.plotline,
-        color: '#E8431E',
+        color: config.color,
         dashStyle: 'shortdash',
         width: 3,
         label: {

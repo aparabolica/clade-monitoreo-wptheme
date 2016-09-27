@@ -1,9 +1,10 @@
+<?php
+global $data_query, $theme_title, $term;
+$table_rows = get_field('table_rows');
+$table_columns = get_field('table_columns');
+?>
 <div class="data-table">
   <?php
-  $table_rows = get_field('table_rows');
-  $table_columns = get_field('table_columns');
-
-  global $data_query, $theme_title, $term;
   if($data_query->have_posts()) :
     while($data_query->have_posts()) :
       $data_query->the_post();
@@ -15,7 +16,6 @@
       wp_reset_postdata();
     endwhile;
   endif;
-
   ?>
   <table class="table">
     <?php if($table_columns) : ?>

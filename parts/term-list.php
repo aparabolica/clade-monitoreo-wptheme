@@ -1,12 +1,5 @@
 <?php
 global $theme_id, $terms, $has_chart;
-/*
- * **FIX**
- *
- * - Should also be able to download data from this links
- *   If no chart or tree nav is available
- *
- */
 ?>
 <ul class="term-list <?php if(!$has_chart) echo 'full'; ?>">
   <?php

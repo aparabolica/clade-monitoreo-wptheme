@@ -3,7 +3,6 @@ global $wp_the_query, $post;
 global $theme_title, $theme_id;
 $theme_group_post = $post;
 ?>
-
 <div class="theme-group">
   <div class="page-section">
     <div class="container">
