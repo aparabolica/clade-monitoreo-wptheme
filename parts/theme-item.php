@@ -83,6 +83,7 @@ $theme_class = '';
           <!-- START TAX NAV -->
           <?php
           if($taxonomy && !$is_tax) :
+            // Display terms for filtering charts or download PDF data
             $terms_columns = 'twelve';
             if(get_field('has_chart'))
               $terms_columns = 'four';
@@ -104,8 +105,8 @@ $theme_class = '';
             ?>
             <div class="<?php echo $data_columns; ?> columns">
               <?php
-              // Loop through each term to display data
               if($terms) :
+                // Case for charts for each custom taxonomy data
                 foreach($terms as $term) :
                   $tax_query = array(
                     array(
@@ -143,6 +144,7 @@ $theme_class = '';
                   <?php
                 endforeach;
               else :
+                // Case for one chart (one data for the theme)
                 $data_query = clade_get_data_query($theme_id);
                 ?>
                 <div class="term-item">
