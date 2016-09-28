@@ -127,6 +127,7 @@ require_once(TEMPLATEPATH . '/inc/data-collections.php');
 require_once(TEMPLATEPATH . '/inc/themes.php');
 require_once(TEMPLATEPATH . '/inc/countries.php');
 require_once(TEMPLATEPATH . '/inc/theme-query.php');
+require_once(TEMPLATEPATH . '/inc/field-groups.php');
 
 /**
  * Get first paragraph from a WordPress post. Use inside the Loop.
