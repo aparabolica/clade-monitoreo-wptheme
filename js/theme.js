@@ -15,10 +15,28 @@
       /*
        * Nav between theme group themes
        */
+
+      // Remove theme nav from non existant themes
+      $themeNav.each(function() {
+        var id = $(this).data('theme');
+        if(!$themeItems.filter('#theme-' + id).length) {
+          $(this).parent().next('li').remove();
+          $(this).parent().remove();
+        }
+      });
+
+      // Remove child themes if empty (after remove)
+      if(!$themeGroup.find('.child-themes li').length) {
+        $themeGroup.find('.child-themes').remove();
+      }
+
       if(!$themeItems.length) {
-        $themeGroup.hide();
-        $themeGroup.parents('.theme-group').hide();
+
+        // Remove theme group without themes
+        $themeGroup.parents('.theme-group').remove();
+
       } else if($themeItems.length > 1) {
+
         $themeItems.hide();
         $themeNav.addClass('clickable');
         $themeNav.on('click', function(e) {
