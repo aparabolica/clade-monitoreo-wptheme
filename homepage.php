@@ -5,30 +5,35 @@
 ?>
 
 <?php get_header(); ?>
+<?php if(have_posts()) : while(have_posts()) : the_post();
+  $learn_more_page = get_field('learn_more_page');
+  ?>
 
-<section id="intro">
-  <div class="container">
-    <div class="eight columns offset-by-two">
-      <div class="intro-content">
-        <p>Cillum veniam nisi duis mollit pariatur in officia ullamco consectetur ullamco ipsum. Adipisicing eiusmod nisi eiusmod anim officia non exercitation sit cillum reprehenderit. Laborum do ad cupidatat amet dolore duis ipsum Lorem ad pariatur laborum nisi nostrud qui magna.</p>
-        <p>Adipisicing eiusmod nisi eiusmod anim officia non exercitation sit cillum reprehenderit. Laborum do ad cupidatat amet dolore.</p>
-        <p class="button-group">
-          <span class="group-item">
-            <a class="button button-secondary" href="<?php echo home_url('/introduccion'); ?>">
-              <span class="fa fa-align-left"></span>
-              Leer más
-            </a>
-          </span>
-          <span class="group-item">
-            <a class="button" href="<?php echo get_post_type_archive_link('theme-group'); ?>">
-              <span class="fa fa-bar-chart"></span>
-              Analisis
-            </a>
-          </span>
-        </p>
+  <section id="intro">
+    <div class="container">
+      <div class="eight columns offset-by-two">
+        <div class="intro-content">
+          <?php the_field('home_intro'); ?>
+          <p class="button-group">
+            <?php if($learn_more_page) : ?>
+              <span class="group-item">
+                <a class="button button-secondary" href="<?php echo get_permalink($learn_more_page); ?>">
+                  <span class="fa fa-align-left"></span>
+                  Leer más
+                </a>
+              </span>
+            <?php endif; ?>
+            <span class="group-item">
+              <a class="button" href="<?php echo get_post_type_archive_link('theme-group'); ?>">
+                <span class="fa fa-bar-chart"></span>
+                Analisis
+              </a>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>
