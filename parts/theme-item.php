@@ -21,6 +21,9 @@ if($taxonomy) {
       'hide_empty' => false
     ));
   }
+} else {
+  if($wp_the_query->is_tax())
+    return;
 }
 
 $has_chart = get_field('has_chart');

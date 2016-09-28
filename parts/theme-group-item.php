@@ -1,5 +1,5 @@
 <?php
-global $wp_the_query, $post;
+global $wp_the_query, $post, $term;
 global $theme_title, $theme_id;
 $theme_group_post = $post;
 ?>
@@ -16,7 +16,19 @@ $theme_group_post = $post;
       <div class="container">
         <div class="twelve columns">
           <div class="section-intro-content">
-            <?php the_content(); ?>
+            <?php
+            if($wp_the_query->is_tax('country') && have_rows('countries')) :
+              while(have_rows('countries')) :
+                the_row();
+                $country = get_sub_field('country');
+                $details = get_sub_field('country_details');
+                if($country == $term->term_id)
+                  echo $details;
+              endwhile;
+            else :
+              the_content();
+            endif;
+            ?>
           </div>
         </div>
       </div>

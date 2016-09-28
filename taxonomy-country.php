@@ -36,7 +36,7 @@ $term = get_queried_object();
       </div>
     </div>
   </section>
-  <section class="page-content theme-group">
+  <section class="page-content">
     <?php
     query_posts('post_type=theme-group&posts_per_page=-1');
     if(have_posts()) :

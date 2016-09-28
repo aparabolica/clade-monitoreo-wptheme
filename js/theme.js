@@ -4,6 +4,7 @@
    * Content navigation
    */
   $(document).ready(function() {
+
     $('.theme-group-item').each(function() {
 
       var $themeGroup = $(this);
@@ -14,7 +15,10 @@
       /*
        * Nav between theme group themes
        */
-      if($themeItems.length > 1) {
+      if(!$themeItems.length) {
+        $themeGroup.hide();
+        $themeGroup.parents('.theme-group').hide();
+      } else if($themeItems.length > 1) {
         $themeItems.hide();
         $themeNav.addClass('clickable');
         $themeNav.on('click', function(e) {
