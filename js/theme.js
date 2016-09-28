@@ -40,12 +40,23 @@
         $themeItems.hide();
         $themeNav.addClass('clickable');
         $themeNav.on('click', function(e) {
+          var arrowPos = $(this).offset().left + ($(this).width()/2);
           e.preventDefault();
           $themeNav.removeClass('active');
           $(this).addClass('active');
           var id = $(this).data('theme');
           $themeItems.hide();
-          $themeItems.filter('#theme-' + id).show();
+
+          var $theme = $themeItems.filter('#theme-' + id);
+          if($theme.length) {
+            var $themeContainer = $theme.find('.theme-content');
+            $theme.show();
+            arrowPos = ((arrowPos-$themeContainer.offset().left) / $themeContainer.width()) * 100;
+            $theme.find('.arrow').css({
+              left: arrowPos + '%'
+            });
+          }
+
           window.dispatchEvent(new Event('resize'));
         });
         $themeNav.filter('.main').click();
