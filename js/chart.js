@@ -42,7 +42,8 @@
       },
       plotOptions: {
         column: {
-          stacking: config.stacking
+          stacking: config.stacking,
+          groupPadding: 0
         },
         series: {
           borderWidth: 0,
@@ -62,7 +63,6 @@
       series: [{
         type: 'column',
         color: config.color,
-        groupPadding: 0,
       }],
       exporting: {
         chartOptions: {
@@ -103,11 +103,13 @@
       chart.yAxis.plotLines = [{
         value: config.plotline,
         color: config.color,
+        zIndex: 10,
         dashStyle: 'shortdash',
         width: 3,
         label: {
           text: config.plotlineText,
           style: {
+            textShadow: "2px 2px rgba(0,0,0,0.3)",
             color: '#fff',
             fontWeight: 500,
             textTransform: 'uppercase'
@@ -118,11 +120,13 @@
       chart.exporting.chartOptions.yAxis.plotLines = [{
         value: config.plotline,
         color: config.color,
+        zIndex: 10,
         dashStyle: 'shortdash',
         width: 3,
         label: {
           text: config.plotlineText,
           style: {
+            textShadow: "2px 2px rgba(255,255,255,0.5)",
             color: '#000',
             fontWeight: 500,
             textTransform: 'uppercase'
