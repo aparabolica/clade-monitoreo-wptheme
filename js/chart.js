@@ -41,6 +41,9 @@
         gridLineColor: 'rgba(0,0,0,0.1)'
       },
       plotOptions: {
+        column: {
+          stacking: config.stacking
+        },
         series: {
           borderWidth: 0,
           dataLabels: {
@@ -57,10 +60,12 @@
         pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
       },
       series: [{
-        name: 'Año',
+        type: 'column',
         color: config.color,
-        // colorByPoint: true,
-        groupPadding: 0
+        // groupPadding: 0,
+      }, {
+        type: 'column',
+        // groupPadding: 0,
       }],
       exporting: {
         chartOptions: {

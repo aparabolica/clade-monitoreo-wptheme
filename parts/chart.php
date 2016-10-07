@@ -8,6 +8,7 @@ if($data_query->have_posts()) :
     $csv = get_field('csv');
     $plotline_number = get_field('plot_line_number');
     $plotline_text = get_field('plot_line_text');
+    $stacking = get_field('stacking');
     ?>
     <div id="chart_<?php the_ID(); ?>" class="clade-chart"></div>
     <script type="text/javascript">
@@ -19,6 +20,7 @@ if($data_query->have_posts()) :
             data: csv,
             title: '<?php echo $theme_title; ?>',
             subtitle: '<?php echo $term->name; ?>',
+            stacking: <?php echo ($stacking ? "'" . $stacking . "'" : 'null'); ?>
           };
           <?php if($plotline_number) : ?>
             chartConfig.plotline = <?php echo $plotline_number ?>;

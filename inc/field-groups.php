@@ -212,6 +212,38 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
+		array (
+			'key' => 'field_stacking',
+			'label' => 'Stacking',
+			'name' => 'stacking',
+			'type' => 'select',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array (
+				array (
+					array (
+						'field' => 'field_57e58604e46db',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array (
+				'normal' => 'Normal',
+				'percent' => 'Percentage',
+			),
+			'allow_null' => 1,
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
 	),
 	'location' => array (
 		array (
