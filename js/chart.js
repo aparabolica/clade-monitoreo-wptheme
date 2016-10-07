@@ -126,7 +126,6 @@
         label: {
           text: config.plotlineText,
           style: {
-            textShadow: "2px 2px rgba(255,255,255,0.5)",
             color: '#000',
             fontWeight: 500,
             textTransform: 'uppercase'
