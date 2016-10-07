@@ -62,10 +62,7 @@
       series: [{
         type: 'column',
         color: config.color,
-        // groupPadding: 0,
-      }, {
-        type: 'column',
-        // groupPadding: 0,
+        groupPadding: 0,
       }],
       exporting: {
         chartOptions: {
