@@ -78,7 +78,7 @@ function clade_scripts() {
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
 
 
-  wp_register_script('chart', get_template_directory_uri() . '/js/chart.js', array('jquery', 'highcharts', 'highcharts.data', 'highcharts.export'), '0.0.5');
+  wp_register_script('chart', get_template_directory_uri() . '/js/chart.js', array('jquery', 'highcharts', 'highcharts.data', 'highcharts.export'), '0.0.6');
   wp_register_script('theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '0.0.2');
   wp_register_script('table', get_template_directory_uri() . '/js/table.js', array('jquery'), '0.0.1');
 

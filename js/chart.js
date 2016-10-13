@@ -43,7 +43,7 @@
       plotOptions: {
         column: {
           stacking: config.stacking,
-          groupPadding: 0
+          groupPadding: 0.2
         },
         series: {
           borderWidth: 0,
@@ -102,10 +102,10 @@
       chart.yAxis.minRange = config.plotline;
       chart.yAxis.plotLines = [{
         value: config.plotline,
-        color: config.color,
+        color: '#fff',
         zIndex: 10,
         dashStyle: 'shortdash',
-        width: 3,
+        width: 1,
         label: {
           text: config.plotlineText,
           style: {
