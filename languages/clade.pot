@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-13 17:44-0300\n"
+"POT-Creation-Date: 2016-10-14 15:50-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,134 +151,134 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: inc/data-collections.php:27
+#: inc/data-collections.php:57
 msgid "Theme"
 msgstr ""
 
-#: inc/data-collections.php:31
+#: inc/data-collections.php:61
 msgid "Files"
 msgstr ""
 
-#: inc/data-collections.php:70
+#: inc/data-collections.php:100
 msgctxt "post type general name"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:71
+#: inc/data-collections.php:101
 msgctxt "post type singular name"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:72
+#: inc/data-collections.php:102
 msgctxt "admin menu"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:73
+#: inc/data-collections.php:103
 msgctxt "add new on admin bar"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:74
+#: inc/data-collections.php:104
 msgctxt "data collection"
 msgid "Add new"
 msgstr ""
 
-#: inc/data-collections.php:75
+#: inc/data-collections.php:105
 msgid "Add new data collection"
 msgstr ""
 
-#: inc/data-collections.php:76
+#: inc/data-collections.php:106
 msgid "New data collection"
 msgstr ""
 
-#: inc/data-collections.php:77
+#: inc/data-collections.php:107
 msgid "Edit data collection item"
 msgstr ""
 
-#: inc/data-collections.php:78
+#: inc/data-collections.php:108
 msgid "View data collection"
 msgstr ""
 
-#: inc/data-collections.php:79
+#: inc/data-collections.php:109
 msgid "All data collections"
 msgstr ""
 
-#: inc/data-collections.php:80
+#: inc/data-collections.php:110
 msgid "Search data collections"
 msgstr ""
 
-#: inc/data-collections.php:81
+#: inc/data-collections.php:111
 msgid "Parent data collections:"
 msgstr ""
 
-#: inc/data-collections.php:82
+#: inc/data-collections.php:112
 msgid "No data collections found."
 msgstr ""
 
-#: inc/data-collections.php:83
+#: inc/data-collections.php:113
 msgid "No data collections found in trash."
 msgstr ""
 
-#: inc/data-collections.php:87
+#: inc/data-collections.php:117
 msgid "CLADE Data Collections"
 msgstr ""
 
-#: inc/data-collections.php:107
+#: inc/data-collections.php:137
 msgctxt "taxonomy general name"
 msgid "Data categories"
 msgstr ""
 
-#: inc/data-collections.php:108
+#: inc/data-collections.php:138
 msgctxt "taxonomy singular name"
 msgid "Data category"
 msgstr ""
 
-#: inc/data-collections.php:109
+#: inc/data-collections.php:139
 msgid "Search data categories"
 msgstr ""
 
-#: inc/data-collections.php:110
+#: inc/data-collections.php:140
 msgid "Popular data categories"
 msgstr ""
 
-#: inc/data-collections.php:111
+#: inc/data-collections.php:141
 msgid "All data categories"
 msgstr ""
 
-#: inc/data-collections.php:114
+#: inc/data-collections.php:144
 msgid "Edit data category"
 msgstr ""
 
-#: inc/data-collections.php:115
+#: inc/data-collections.php:145
 msgid "Update data category"
 msgstr ""
 
-#: inc/data-collections.php:116
+#: inc/data-collections.php:146
 msgid "Add New data category"
 msgstr ""
 
-#: inc/data-collections.php:117
+#: inc/data-collections.php:147
 msgid "New data category Name"
 msgstr ""
 
-#: inc/data-collections.php:118
+#: inc/data-collections.php:148
 msgid "Separate writers with commas"
 msgstr ""
 
-#: inc/data-collections.php:119
+#: inc/data-collections.php:149
 msgid "Add or remove writers"
 msgstr ""
 
-#: inc/data-collections.php:120
+#: inc/data-collections.php:150
 msgid "Choose from the most used writers"
 msgstr ""
 
-#: inc/data-collections.php:121
+#: inc/data-collections.php:151
 msgid "No writers found."
 msgstr ""
 
-#: inc/data-collections.php:122
+#: inc/data-collections.php:152
 msgid "Data categories"
 msgstr ""
 

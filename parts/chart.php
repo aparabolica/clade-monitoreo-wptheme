@@ -31,6 +31,7 @@ if($data_query->have_posts()) :
       })(jQuery);
     </script>
     <?php
+    clade_data_download_button();
     wp_reset_postdata();
   endwhile;
 endif;

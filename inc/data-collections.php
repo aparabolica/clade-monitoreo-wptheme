@@ -5,6 +5,36 @@
 * Data Collections
 */
 
+function clade_data_download_button() {
+  $files = array();
+  $pdf = get_field('pdf');
+  if($pdf) $files[] = $pdf;
+  $csv = get_field('csv');
+  if($csv) $files[] = $csv;
+
+  $tag = 'a';
+  $href = $files[0]['url'];
+
+  if(count($files) > 1) :
+    $tag = 'button';
+    $href = '';
+  endif;
+  ?>
+  <<?php echo $tag; ?> class="button button-small file-download" href="<?php echo $href; ?>">
+    <span class="fa fa-download"></span>
+    Download
+    <?php if(count($files) > 1) : ?>
+      <span class="formats"><?php
+        foreach($files as $file) :
+          $ext = wp_check_filetype($file['filename'])['ext'];
+          ?><a href="<?php echo $file['url']; ?>"><?php echo $ext; ?></a><?php
+        endforeach;
+      ?></span>
+    <?php endif; ?>
+  </<?php echo $tag; ?>>
+  <?php
+}
+
 class Clade_Data_Collections {
 
   function __construct() {

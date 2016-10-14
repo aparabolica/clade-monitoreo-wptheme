@@ -11,7 +11,7 @@ $table_columns = get_field('table_columns');
       $file = get_field('pdf');
       $terms = clade_get_data_categories_ids();
       ?>
-      <a class="button button-small file-download" data-categories="<?php echo implode(',', $terms); ?>" href="<?php echo $file['url']; ?>"><span class="fa fa-download"></span>Download</a>
+      <span class="button-container" data-categories="<?php echo implode(',', $terms); ?>"><?php clade_data_download_button(); ?></span>
       <?php
       wp_reset_postdata();
     endwhile;

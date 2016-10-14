@@ -174,6 +174,19 @@ $theme_class = '';
         endif;
         ?>
         <!-- END TABLE -->
+        <!-- DOWNLOAD BUTTONS -->
+        <?php
+        if(!$has_chart && !$taxonmy && !$is_tax && !($rows || $cols)) :
+          $data_query = clade_get_data_query($theme_id);
+          if($data_query->have_posts()) :
+            while($data_query->have_posts()) :
+              $data_query->the_post();
+              clade_data_download_button();
+              wp_reset_postdata();
+            endwhile;
+          endif;
+        endif;
+        ?>
       </div>
     </div>
   </div>

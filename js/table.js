@@ -4,7 +4,7 @@
     $('.data-table').each(function() {
 
       var $container = $(this);
-      var $files = $container.find('.file-download');
+      var $files = $container.find('.button-container');
       var $table = $container.find('.table');
 
       /* Fix row heads offset for thead */
