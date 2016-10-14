@@ -1,6 +1,8 @@
 <?php
 get_header();
 $term = get_queried_object();
+$report = get_field('country_report', $term);
+$analysis = get_field('country_analysis', $term);
 ?>
 <article id="country-page" class="single-page">
   <header class="page-header">
@@ -11,7 +13,6 @@ $term = get_queried_object();
         <h1><?php single_term_title(); ?></h1>
       </div>
       <?php
-      $report = get_field('country_report', $term);
       if($report) :
         ?>
         <div class="four columns">
@@ -47,6 +48,22 @@ $term = get_queried_object();
     endif;
     wp_reset_query();
     ?>
+    <?php if($analysis) : ?>
+      <div class="page-section">
+        <article id="country-analysis">
+          <div class="container">
+            <div class="twelve columns">
+              <div class="section-title">
+                <h2 class="h"><?php _e('Country analysis', 'clade'); ?></h2>
+              </div>
+              <div class="analysis-content">
+                <?php echo $analysis; ?>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    <?php endif; ?>
   </section>
 </article>
 <?php get_footer(); ?>

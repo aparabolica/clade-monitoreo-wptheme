@@ -70,7 +70,7 @@ function clade_scripts() {
   wp_register_style('normalize', get_template_directory_uri() . '/assets/skeleton/css/normalize.css');
   wp_register_style('skeleton', get_template_directory_uri() . '/assets/skeleton/css/skeleton.css');
   wp_register_style('fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
-  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.4');
+  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.5');
 
   wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
   wp_register_script('highcharts.data', get_template_directory_uri() . '/assets/highcharts/modules/data.js', array('highcharts'));
@@ -153,3 +153,17 @@ function get_content_without_first_paragraph() {
   $content = apply_filters('the_content', $post->post_content);
   return str_replace(get_first_paragraph(), '', $content);
 }
+
+
+// function clade_get_data_category($term) {
+//   $_term = $term->to_array();
+//   if($_term['parent']) {
+//     remove_filter('get_data-category', 'clade_get_data_category');
+//     $parent = get_term($_term['parent'], 'data-category');
+//     add_filter('get_data-category', 'clade_get_data_category');
+//     $_term['name'] = $parent->name . ': ' . $_term['name'];
+//     $term = new WP_Term((object) $_term);
+//   }
+//   return $term;
+// }
+// add_filter('get_data-category', 'clade_get_data_category');

@@ -88,13 +88,15 @@ $theme_group_post = $post;
             <!-- THEME GROUP ITEM CONTENT -->
             <?php
             get_template_part('parts/theme-item');
-            foreach($theme['subthemes'] as $subtheme) :
-              $post = $subtheme;
-              setup_postdata($post);
-              $theme_id = get_the_ID();
-              $theme_title = get_the_title();
-              get_template_part('parts/theme-item');
-            endforeach;
+            if($theme['subthemes']) :
+              foreach($theme['subthemes'] as $subtheme) :
+                $post = $subtheme;
+                setup_postdata($post);
+                $theme_id = get_the_ID();
+                $theme_title = get_the_title();
+                get_template_part('parts/theme-item');
+              endforeach;
+            endif;
             ?>
             <!-- END THEME GROUP ITEM CONTENT -->
           </div>

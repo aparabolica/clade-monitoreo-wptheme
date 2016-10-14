@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-14 15:50-0300\n"
+"POT-Creation-Date: 2016-10-14 16:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -406,4 +406,8 @@ msgstr ""
 
 #: inc/themes.php:65
 msgid "No theme groups found in trash."
+msgstr ""
+
+#: taxonomy-country.php:57
+msgid "Country analysis"
 msgstr ""

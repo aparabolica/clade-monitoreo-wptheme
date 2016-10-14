@@ -72,6 +72,24 @@ acf_add_local_field_group(array (
 			'max_size' => '',
 			'mime_types' => 'pdf',
 		),
+		array (
+			'key' => 'field_country_analysis',
+			'label' => 'Country analysis',
+			'name' => 'country_analysis',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'basic',
+			'media_upload' => 1,
+		),
 	),
 	'location' => array (
 		array (
