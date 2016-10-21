@@ -126,7 +126,7 @@ $theme_class = '';
                     <?php if($data_query->have_posts()) : ?>
                       <?php get_template_part('parts/chart'); ?>
                     <?php else : ?>
-                      <p>No data was found.</p>
+                      <p><?php _e('There\'s not enough data to display', 'clade'); ?></p>
                     <?php endif; ?>
                   </div>
                 <?php
@@ -141,7 +141,7 @@ $theme_class = '';
                     <?php if($data_query->have_posts()) : ?>
                       <?php get_template_part('parts/chart'); ?>
                     <?php else : ?>
-                      <p>No data was found.</p>
+                      <p><?php _e('There\'s not enough data to display', 'clade'); ?></p>
                     <?php endif; ?>
                   </div>
                   <?php
@@ -154,7 +154,7 @@ $theme_class = '';
                   <?php if($data_query->have_posts()) : ?>
                     <?php get_template_part('parts/chart'); ?>
                   <?php else : ?>
-                    <p>No data was found.</p>
+                    <p><?php _e('There\'s not enough data to display', 'clade'); ?></p>
                   <?php endif; ?>
                 </div>
                 <?php
