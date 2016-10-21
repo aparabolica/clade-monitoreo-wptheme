@@ -3,7 +3,7 @@
   cladeChart = function(config) {
     var chart = {
       chart: {
-        type: 'column',
+        type: config.type,
         backgroundColor: null,
         style: {
           fontFamily: 'Ubuntu, sans-serif'
@@ -41,12 +41,12 @@
         gridLineColor: 'rgba(0,0,0,0.1)'
       },
       plotOptions: {
-        column: {
-          stacking: config.stacking,
-          groupPadding: 0.2
-        },
         series: {
+          color: config.color,
+          stacking: config.stacking,
+          groupPadding: 0.2,
           borderWidth: 0,
+          fillOpacity: .3,
           dataLabels: {
             enabled: true,
             color: '#fff',
@@ -60,10 +60,6 @@
         headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
         pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
       },
-      series: [{
-        type: 'column',
-        color: config.color,
-      }],
       exporting: {
         chartOptions: {
           title: {
