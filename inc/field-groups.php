@@ -299,6 +299,32 @@ acf_add_local_field_group(array (
 			'append' => '',
 			'maxlength' => '',
 		),
+		array (
+			'key' => 'field_chart_legend',
+			'label' => 'Custom chart legend',
+			'name' => 'chart_legend',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array (
+				array (
+					array (
+						'field' => 'field_57e58604e46db',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'basic',
+			'media_upload' => 1,
+		),
 	),
 	'location' => array (
 		array (
