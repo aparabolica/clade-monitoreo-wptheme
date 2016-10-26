@@ -76,6 +76,9 @@
     .page-welcome {
       font-size: 1.1em;
     }
+    .page-content {
+      font-size: 1em;
+    }
   }
   .page-section .section-intro .section-intro-content {
     column-count: 1;
@@ -106,6 +109,21 @@
     .theme-content {
       margin: 1.5rem -5% 0;
       padding: 1rem;
+    }
+  }
+  #methodology {
+    .method {
+      .section-title {
+        margin-bottom: 3rem;
+      }
+      .method-description {
+        &:before {
+          top: -20px;
+          left: 50%;
+          margin-left: -15px;
+          border-color: transparent transparent #455C53 transparent;
+        }
+      }
     }
   }
 }
