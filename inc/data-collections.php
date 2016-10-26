@@ -43,6 +43,8 @@ class Clade_Data_Collections {
 
     add_filter('manage_posts_columns', array($this, 'admin_columns'));
     add_action('manage_posts_custom_column', array($this, 'admin_columns_content'), 10, 2);
+
+    add_shortcode('data-collection', array($this, 'data_collection_shortcode'));
   }
 
   function admin_columns($defaults) {
@@ -55,6 +57,7 @@ class Clade_Data_Collections {
           $columns[$key] = $title;
         } else {
           $columns['theme'] = __('Theme', 'clade');
+          $columns['id'] = __('ID', 'clade');
         }
         // Files after date
         if($key == 'date')
@@ -66,6 +69,9 @@ class Clade_Data_Collections {
   }
 
   function admin_columns_content($column_name, $post_id) {
+    if($column_name == 'id') {
+      echo '<strong>' . $post_id . '</strong>';
+    }
     if($column_name == 'theme') {
       $theme = get_field('theme', $post_id);
       echo get_the_title($theme->ID);
@@ -164,6 +170,28 @@ class Clade_Data_Collections {
 
     register_taxonomy( 'data-category', 'data-collection', $args );
 
+  }
+
+  function get_data_collection($post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+
+    global $data_query;
+    $data_query = new WP_Query(array(
+      'p' => $post_id,
+      'post_type' => 'data-collection'
+    ));
+    ob_start();
+    get_template_part('parts/chart');
+    return ob_get_clean();
+  }
+
+  function data_collection_shortcode($atts) {
+    $atts = shortcode_atts(array(
+      'id' => false
+    ), $atts, 'data-collection');
+
+    return $this->get_data_collection($atts['id']);
   }
 
 }

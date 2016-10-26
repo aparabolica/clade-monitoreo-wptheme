@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 12:35-0200\n"
+"POT-Creation-Date: 2016-10-26 13:16-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,264 +151,268 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: inc/data-collections.php:57
+#: inc/data-collections.php:59
 msgid "Theme"
 msgstr ""
 
-#: inc/data-collections.php:61
+#: inc/data-collections.php:60
+msgid "ID"
+msgstr ""
+
+#: inc/data-collections.php:64
 msgid "Files"
 msgstr ""
 
-#: inc/data-collections.php:100
+#: inc/data-collections.php:106
 msgctxt "post type general name"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:101
+#: inc/data-collections.php:107
 msgctxt "post type singular name"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:102
+#: inc/data-collections.php:108
 msgctxt "admin menu"
 msgid "Data collections"
 msgstr ""
 
-#: inc/data-collections.php:103
+#: inc/data-collections.php:109
 msgctxt "add new on admin bar"
 msgid "Data collection"
 msgstr ""
 
-#: inc/data-collections.php:104
+#: inc/data-collections.php:110
 msgctxt "data collection"
 msgid "Add new"
 msgstr ""
 
-#: inc/data-collections.php:105
+#: inc/data-collections.php:111
 msgid "Add new data collection"
 msgstr ""
 
-#: inc/data-collections.php:106
+#: inc/data-collections.php:112
 msgid "New data collection"
 msgstr ""
 
-#: inc/data-collections.php:107
+#: inc/data-collections.php:113
 msgid "Edit data collection item"
 msgstr ""
 
-#: inc/data-collections.php:108
+#: inc/data-collections.php:114
 msgid "View data collection"
 msgstr ""
 
-#: inc/data-collections.php:109
+#: inc/data-collections.php:115
 msgid "All data collections"
 msgstr ""
 
-#: inc/data-collections.php:110
+#: inc/data-collections.php:116
 msgid "Search data collections"
 msgstr ""
 
-#: inc/data-collections.php:111
+#: inc/data-collections.php:117
 msgid "Parent data collections:"
 msgstr ""
 
-#: inc/data-collections.php:112
+#: inc/data-collections.php:118
 msgid "No data collections found."
 msgstr ""
 
-#: inc/data-collections.php:113
+#: inc/data-collections.php:119
 msgid "No data collections found in trash."
 msgstr ""
 
-#: inc/data-collections.php:117
+#: inc/data-collections.php:123
 msgid "CLADE Data Collections"
 msgstr ""
 
-#: inc/data-collections.php:137
+#: inc/data-collections.php:143
 msgctxt "taxonomy general name"
 msgid "Data categories"
 msgstr ""
 
-#: inc/data-collections.php:138
+#: inc/data-collections.php:144
 msgctxt "taxonomy singular name"
 msgid "Data category"
 msgstr ""
 
-#: inc/data-collections.php:139
+#: inc/data-collections.php:145
 msgid "Search data categories"
 msgstr ""
 
-#: inc/data-collections.php:140
+#: inc/data-collections.php:146
 msgid "Popular data categories"
 msgstr ""
 
-#: inc/data-collections.php:141
+#: inc/data-collections.php:147
 msgid "All data categories"
 msgstr ""
 
-#: inc/data-collections.php:144
+#: inc/data-collections.php:150
 msgid "Edit data category"
 msgstr ""
 
-#: inc/data-collections.php:145
+#: inc/data-collections.php:151
 msgid "Update data category"
 msgstr ""
 
-#: inc/data-collections.php:146
+#: inc/data-collections.php:152
 msgid "Add New data category"
 msgstr ""
 
-#: inc/data-collections.php:147
+#: inc/data-collections.php:153
 msgid "New data category Name"
 msgstr ""
 
-#: inc/data-collections.php:148
+#: inc/data-collections.php:154
 msgid "Separate writers with commas"
 msgstr ""
 
-#: inc/data-collections.php:149
+#: inc/data-collections.php:155
 msgid "Add or remove writers"
 msgstr ""
 
-#: inc/data-collections.php:150
+#: inc/data-collections.php:156
 msgid "Choose from the most used writers"
 msgstr ""
 
-#: inc/data-collections.php:151
+#: inc/data-collections.php:157
 msgid "No writers found."
 msgstr ""
 
-#: inc/data-collections.php:152
+#: inc/data-collections.php:158
 msgid "Data categories"
 msgstr ""
 
-#: inc/themes.php:17
+#: inc/themes.php:18
 msgctxt "post type general name"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:18
+#: inc/themes.php:19
 msgctxt "post type singular name"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:19
+#: inc/themes.php:20
 msgctxt "admin menu"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:20
+#: inc/themes.php:21
 msgctxt "add new on admin bar"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:21
+#: inc/themes.php:22
 msgctxt "theme"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:22
+#: inc/themes.php:23
 msgid "Add new theme"
 msgstr ""
 
-#: inc/themes.php:23
+#: inc/themes.php:24
 msgid "New theme"
 msgstr ""
 
-#: inc/themes.php:24
+#: inc/themes.php:25
 msgid "Edit theme"
 msgstr ""
 
-#: inc/themes.php:25
+#: inc/themes.php:26
 msgid "View theme"
 msgstr ""
 
-#: inc/themes.php:26
+#: inc/themes.php:27
 msgid "All themes"
 msgstr ""
 
-#: inc/themes.php:27
+#: inc/themes.php:28
 msgid "Search themes"
 msgstr ""
 
-#: inc/themes.php:28
+#: inc/themes.php:29
 msgid "Parent themes:"
 msgstr ""
 
-#: inc/themes.php:29
+#: inc/themes.php:30
 msgid "No themes found."
 msgstr ""
 
-#: inc/themes.php:30
+#: inc/themes.php:31
 msgid "No themes found in trash."
 msgstr ""
 
-#: inc/themes.php:34 inc/themes.php:69
+#: inc/themes.php:35 inc/themes.php:70
 msgid "CLADE Theme Groups"
 msgstr ""
 
-#: inc/themes.php:52
+#: inc/themes.php:53
 msgctxt "post type general name"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:53
+#: inc/themes.php:54
 msgctxt "post type singular name"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:54
+#: inc/themes.php:55
 msgctxt "admin menu"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:55
+#: inc/themes.php:56
 msgctxt "add new on admin bar"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:56
+#: inc/themes.php:57
 msgctxt "theme group"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:57
+#: inc/themes.php:58
 msgid "Add new theme group"
 msgstr ""
 
-#: inc/themes.php:58
+#: inc/themes.php:59
 msgid "New theme group"
 msgstr ""
 
-#: inc/themes.php:59
+#: inc/themes.php:60
 msgid "Edit theme group"
 msgstr ""
 
-#: inc/themes.php:60
+#: inc/themes.php:61
 msgid "View theme group"
 msgstr ""
 
-#: inc/themes.php:61
+#: inc/themes.php:62
 msgid "All theme groups"
 msgstr ""
 
-#: inc/themes.php:62
+#: inc/themes.php:63
 msgid "Search theme groups"
 msgstr ""
 
-#: inc/themes.php:63
+#: inc/themes.php:64
 msgid "Parent theme groups:"
 msgstr ""
 
-#: inc/themes.php:64
+#: inc/themes.php:65
 msgid "No theme groups found."
 msgstr ""
 
-#: inc/themes.php:65
+#: inc/themes.php:66
 msgid "No theme groups found in trash."
 msgstr ""
 
-#: parts/theme-item.php:129 parts/theme-item.php:144 parts/theme-item.php:157
+#: parts/theme-item.php:130 parts/theme-item.php:145 parts/theme-item.php:158
 msgid "There's not enough data to display"
 msgstr ""
 

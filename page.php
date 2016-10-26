@@ -24,7 +24,7 @@
         </div>
       </div>
     </section>
-    <section class="page-content theme-group">
+    <section class="page-content">
       <div class="container">
         <div class="eight columns offset-by-one">
           <?php echo get_content_without_first_paragraph(); ?>

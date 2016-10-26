@@ -1,7 +1,8 @@
 <?php
 
 global $wp_the_query;
-global $has_chart, $theme_id, $terms, $term, $data_query;
+global $theme_id;
+global $has_chart, $terms, $term, $data_query;
 
 $rows = get_field('table_rows');
 $cols = get_field('table_columns');

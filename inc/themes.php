@@ -10,6 +10,7 @@ class Clade_Themes {
   function __construct() {
     add_action('init', array($this, 'register_theme_post_type'));
     add_action('init', array($this, 'register_theme_group_post_type'));
+    add_shortcode('theme', array($this, 'theme_shortcode'));
   }
 
   function register_theme_post_type() {
@@ -80,6 +81,43 @@ class Clade_Themes {
       'supports'           => array( 'title', 'editor', 'excerpt', 'page-attributes' )
     );
     register_post_type( 'theme-group', $args );
+  }
+
+  function get_theme($post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+
+    global $theme_id;
+    $theme_id = $post_id;
+    $post = get_post($post_id);
+    $color = get_field('color');
+    ob_start();
+    ?>
+    <section class="page-content theme-group-item theme-shortcode">
+      <div class="page-section">
+        <div class="section-content">
+          <div class="container">
+            <div class="twelve columns">
+              <h3 style="background-color: <?php echo $color; ?>">
+                <?php the_title(); ?>
+              </h3>
+            </div>
+          </div>
+          <?php get_template_part('parts/theme-item'); ?>
+        </div>
+      </div>
+    </section>
+    <?php
+    wp_reset_postdata();
+    return ob_get_clean();
+  }
+
+  function theme_shortcode($atts) {
+    $atts = shortcode_atts(array(
+      'id' => false
+    ), $atts, 'theme');
+
+    return $this->get_theme($atts['id']);
   }
 
 
