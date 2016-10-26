@@ -64,13 +64,27 @@ function clade_setup_theme() {
 }
 add_action('after_setup_theme', 'clade_setup_theme');
 
+function clade_widgets_init() {
+
+  register_sidebar(array(
+    'name' => __('Footer widgets', 'clade'),
+    'id' => 'footer_widgets',
+    'before_widget' => '<li class="widget">',
+    'after_widget' => '</li>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+  ));
+
+}
+add_action('widgets_init', 'clade_widgets_init');
+
 function clade_scripts() {
 
   wp_register_style('webfonts', 'https://fonts.googleapis.com/css?family=Codystar|Ubuntu:300,400,400i,500,700');
   wp_register_style('normalize', get_template_directory_uri() . '/assets/skeleton/css/normalize.css');
   wp_register_style('skeleton', get_template_directory_uri() . '/assets/skeleton/css/skeleton.css');
   wp_register_style('fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
-  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.6');
+  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfonts', 'normalize', 'skeleton', 'fontawesome'), '0.0.7');
   wp_register_style('responsive', get_template_directory_uri() . '/css/responsive.css', array('main'), '0.0.2');
 
   wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
