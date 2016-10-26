@@ -23,9 +23,13 @@
             <div class="container">
               <div class="four columns">
                 <div class="page-section">
+                  <?php
+                  /*
                   <div class="section-icon">
                     <span class="fa <?php the_sub_field('icon'); ?>"></span>
                   </div>
+                  */
+                  ?>
                   <div class="section-title">
                     <h2 class="h"><?php the_sub_field('title'); ?></h2>
                   </div>
