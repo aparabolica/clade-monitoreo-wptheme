@@ -39,7 +39,7 @@
           */
           ?>
         </nav>
-        <div class="clade">
+        <div class="clade hide-if-mobile">
           <img class="vertical" src="<?php echo get_template_directory_uri(); ?>/img/logo-clade-vertical.png" />
           <img class="horizontal" src="<?php echo get_template_directory_uri(); ?>/img/logo-clade-horizontal.png" />
         </div>

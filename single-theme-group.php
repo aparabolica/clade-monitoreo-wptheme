@@ -1,12 +1,10 @@
-<?php
-$countries = clade_get_countries();
-?>
 <?php get_header(); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
   <article id="analisis" class="single-page">
     <header class="page-header">
       <div class="container">
         <div class="twelve columns">
+          <h1><a href="<?php echo get_post_type_archive_link('theme-group'); ?>">Análisis</a></h1>
           <nav class="page-header-nav">
             <?php
             $theme_id = get_the_ID();
@@ -20,7 +18,6 @@ $countries = clade_get_countries();
             wp_reset_query();
             ?>
           </nav>
-          <h1><a href="<?php echo get_post_type_archive_link('theme-group'); ?>">Análisis</a></h1>
         </div>
       </div>
     </header>

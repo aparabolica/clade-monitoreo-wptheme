@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 13:16-0200\n"
+"POT-Creation-Date: 2016-10-26 15:43-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: functions.php:60
@@ -23,86 +23,6 @@ msgstr ""
 
 #: functions.php:61
 msgid "Footer navigation"
-msgstr ""
-
-#: functions.php:101
-msgid "Argentina"
-msgstr ""
-
-#: functions.php:102
-msgid "Bolivia"
-msgstr ""
-
-#: functions.php:103
-msgid "Brazil"
-msgstr ""
-
-#: functions.php:104
-msgid "Chile"
-msgstr ""
-
-#: functions.php:105
-msgid "Colombia"
-msgstr ""
-
-#: functions.php:106
-msgid "Costa Rica"
-msgstr ""
-
-#: functions.php:107
-msgid "Cuba"
-msgstr ""
-
-#: functions.php:108
-msgid "Ecuador"
-msgstr ""
-
-#: functions.php:109
-msgid "El Salvador"
-msgstr ""
-
-#: functions.php:110
-msgid "Guatemala"
-msgstr ""
-
-#: functions.php:111
-msgid "Haiti"
-msgstr ""
-
-#: functions.php:112
-msgid "Honduras"
-msgstr ""
-
-#: functions.php:113
-msgid "México"
-msgstr ""
-
-#: functions.php:114
-msgid "Nicaragua"
-msgstr ""
-
-#: functions.php:115
-msgid "Panamá"
-msgstr ""
-
-#: functions.php:116
-msgid "Paraguay"
-msgstr ""
-
-#: functions.php:117
-msgid "Peru"
-msgstr ""
-
-#: functions.php:118
-msgid "Republica Dominicana"
-msgstr ""
-
-#: functions.php:119
-msgid "Uruguay"
-msgstr ""
-
-#: functions.php:120
-msgid "Venezuela"
 msgstr ""
 
 #: inc/countries.php:17

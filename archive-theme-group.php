@@ -4,12 +4,12 @@
   <header class="page-header">
     <div class="container">
       <div class="twelve columns">
+        <h1>Análisis</h1>
         <nav class="page-header-nav">
           <?php while(have_posts()) : the_post(); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           <?php endwhile; ?>
         </nav>
-        <h1>Análisis</h1>
       </div>
     </div>
   </header>

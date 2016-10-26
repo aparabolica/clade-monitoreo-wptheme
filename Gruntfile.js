@@ -8,7 +8,8 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'css/main.css': 'css/main.less'
+          'css/main.css': 'css/main.less',
+          'css/responsive.css': 'css/responsive.less'
         }
       }
     },
