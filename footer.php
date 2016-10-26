@@ -22,14 +22,6 @@
       </div>
     </div>
   </section>
-  <nav id="footer_nav">
-    <div class="container">
-      <div class="twelve columns">
-        </section>
-          <?php //wp_nav_menu(array('theme_location' => 'footer_nav')); ?>
-      </div>
-    </div>
-  </nav>
 </footer>
 <?php wp_footer(); ?>
 </body>
