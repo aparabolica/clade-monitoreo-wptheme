@@ -1,5 +1,10 @@
 <?php
 global $data_query, $theme_id, $theme_title, $term;
+global $chart_count;
+if(!$chart_count)
+  $chart_count = 1;
+else
+  $chart_count++;
 // $color = get_field('color', $theme_id);
 $color = '#E8431E';
 if($data_query->have_posts()) :
@@ -12,7 +17,7 @@ if($data_query->have_posts()) :
     $type = get_field('chart_type');
     ?>
     <div class="clade-chart-container">
-      <div id="chart_<?php the_ID(); ?>" class="clade-chart"></div>
+      <div id="chart_<?php echo $chart_count; ?>_<?php the_ID(); ?>" class="clade-chart"></div>
       <div class="chart-legend">
         <?php the_field('chart_legend'); ?>
       </div>
@@ -20,7 +25,7 @@ if($data_query->have_posts()) :
         (function($) {
           $.get('<?php echo $csv['url']; ?>', function(csv) {
             var chartConfig = {
-              element: '#chart_<?php the_ID(); ?>',
+              element: '#chart_<?php echo $chart_count; ?>_<?php the_ID(); ?>',
               color: '<?php echo $color; ?>',
               data: csv,
               title: '<?php echo $theme_title; ?>',
