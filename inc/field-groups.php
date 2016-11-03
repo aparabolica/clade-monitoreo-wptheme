@@ -20,7 +20,7 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'post_type' => array (
-				0 => 'theme',
+				0 => 'data-theme',
 			),
 			'taxonomy' => array (
 			),
@@ -1229,7 +1229,7 @@ acf_add_local_field_group(array (
 			array (
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'theme',
+				'value' => 'data-theme',
 			),
 		),
 	),
@@ -1352,7 +1352,7 @@ acf_add_local_field_group(array (
 			array (
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'theme',
+				'value' => 'data-theme',
 			),
 		),
 	),
@@ -1403,7 +1403,7 @@ acf_add_local_field_group(array (
 						'id' => '',
 					),
 					'post_type' => array (
-						0 => 'theme',
+						0 => 'data-theme',
 					),
 					'taxonomy' => array (
 					),
@@ -1426,7 +1426,7 @@ acf_add_local_field_group(array (
 						'id' => '',
 					),
 					'post_type' => array (
-						0 => 'theme',
+						0 => 'data-theme',
 					),
 					'taxonomy' => array (
 					),

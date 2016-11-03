@@ -50,7 +50,10 @@ function clade_setup_theme() {
 
   load_theme_textdomain('clade', get_template_directory() . '/languages');
 
-  add_theme_support( 'custom-header' );
+  add_theme_support( 'custom-header', array(
+    'width' => 1066,
+    'height' => 600
+  ) );
   add_theme_support( 'post-thumbnails' );
 
   // add_image_size('wide-thumbnail', 400, 225, true);
@@ -145,17 +148,3 @@ function get_content_without_first_paragraph() {
   $content = apply_filters('the_content', $post->post_content);
   return str_replace(get_first_paragraph(), '', $content);
 }
-
-
-// function clade_get_data_category($term) {
-//   $_term = $term->to_array();
-//   if($_term['parent']) {
-//     remove_filter('get_data-category', 'clade_get_data_category');
-//     $parent = get_term($_term['parent'], 'data-category');
-//     add_filter('get_data-category', 'clade_get_data_category');
-//     $_term['name'] = $parent->name . ': ' . $_term['name'];
-//     $term = new WP_Term((object) $_term);
-//   }
-//   return $term;
-// }
-// add_filter('get_data-category', 'clade_get_data_category');

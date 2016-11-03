@@ -46,7 +46,7 @@ class Clade_Themes {
       'menu_position'      => 5,
       'supports'           => array( 'title' )
     );
-    register_post_type( 'theme', $args );
+    register_post_type( 'data-theme', $args );
   }
 
   function register_theme_group_post_type() {
@@ -75,7 +75,7 @@ class Clade_Themes {
       'show_in_menu'       => true,
       'query_var'          => true,
       'rewrite'            => array( 'slug' => 'theme-groups' ),
-      'capability_type'    => 'page',
+      'capability_type'    => 'post',
       'has_archive'        => true,
       'hierarchical'       => false,
       'menu_position'      => 5,

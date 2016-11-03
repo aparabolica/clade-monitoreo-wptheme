@@ -11,7 +11,13 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header id="masthead">
+  <?php
+  $head_css = '';
+  $head_image = get_header_image();
+  if(is_front_page() && $head_image)
+    $head_css = 'style="background-image:url(' . $head_image . ')"';
+  ?>
+  <header id="masthead" <?php echo $head_css; ?>>
     <div class="container">
       <div class="twelve columns">
         <div class="brand">
