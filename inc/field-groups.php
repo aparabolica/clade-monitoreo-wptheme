@@ -1296,6 +1296,24 @@ acf_add_local_field_group(array (
 	'title' => 'Theme details',
 	'fields' => array (
 		array (
+			'key' => 'field_theme_description',
+			'label' => 'Description',
+			'name' => 'theme_description',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+		),
+		array (
 			'key' => 'field_57e56deba6059',
 			'label' => 'Taxonomy',
 			'name' => 'taxonomy',

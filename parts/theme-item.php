@@ -36,6 +36,7 @@ $theme_class = '';
   <div class="container">
     <div class="twelve columns">
       <div class="theme-content">
+        <?php if(get_field('theme_description')) the_field('theme_description'); ?>
         <span class="arrow"></span>
         <!-- START TREE NAV -->
         <?php
