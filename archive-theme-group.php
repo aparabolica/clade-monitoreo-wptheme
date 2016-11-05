@@ -37,7 +37,7 @@
         <div class="twelve columns">
           <div class="page-section">
             <div class="section-title">
-              <h2><?php _e('Country analysis', 'clade'); ?></h2>
+              <h2><?php _e('Analysis per country', 'clade'); ?></h2>
             </div>
             <div class="section-content">
               <?php
