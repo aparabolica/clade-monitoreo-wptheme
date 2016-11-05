@@ -37,7 +37,17 @@ if($data_query->have_posts()) :
               chartConfig.plotline = <?php echo $plotline_number ?>;
               chartConfig.plotlineText = '<?php echo $plotline_text; ?>';
             <?php endif; ?>
-            cladeChart(chartConfig);
+            <?php if($term) : ?>
+              var activated = false;
+              window.addEventListener('clickedTerm', function(e) {
+                if(e.detail == <?php echo $term->term_id; ?> && !activated) {
+                  activated = true;
+                  cladeChart(chartConfig);
+                }
+              });
+            <?php else : ?>
+              cladeChart(chartConfig);
+            <?php endif; ?>
           });
         })(jQuery);
       </script>

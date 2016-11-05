@@ -98,7 +98,7 @@ function clade_scripts() {
 
 
   wp_register_script('chart', get_template_directory_uri() . '/js/chart.js', array('jquery', 'highcharts', 'highcharts.data', 'highcharts.export'), '0.0.7');
-  wp_register_script('theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '0.0.2');
+  wp_register_script('theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '0.0.3');
   wp_register_script('table', get_template_directory_uri() . '/js/table.js', array('jquery'), '0.0.2');
 
   wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids'), '0.0.1');
