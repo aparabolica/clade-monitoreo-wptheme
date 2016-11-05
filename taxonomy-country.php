@@ -9,7 +9,7 @@ $analysis = get_field('country_analysis', $term);
     <div class="container">
       <div class="eight columns">
         <div class="flag" style="background-image:url(<?php the_field('thumbnail', $term); ?>);"></div>
-        <p class="header-label">Análisis de</p><br/>
+        <p class="header-label"><?php _e('Analysis from', 'clade'); ?></p><br/>
         <h1><?php single_term_title(); ?></h1>
       </div>
       <?php
@@ -20,7 +20,7 @@ $analysis = get_field('country_analysis', $term);
             <p>
               <a class="button" href="<?php echo $report; ?>">
                 <span class="fa fa-download"></span>
-                Download análisis
+                <?php _e('Download analysis', 'clade'); ?>
               </a>
             </p>
           </aside>

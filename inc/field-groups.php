@@ -4,11 +4,11 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array (
 	'key' => 'group_57d88e1fbf63b',
-	'title' => 'Associated theme',
+	'title' => __('Associated theme', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57d88e3177878',
-			'label' => 'Theme',
+			'label' => __('Theme', 'clade'),
 			'name' => 'theme',
 			'type' => 'post_object',
 			'instructions' => '',
@@ -51,14 +51,14 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57e2a4712050f',
-	'title' => 'Country metadata',
+	'title' => __('Country metadata', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57e2a4ab02642',
-			'label' => 'Country report',
+			'label' => __('Country report', 'clade'),
 			'name' => 'country_report',
 			'type' => 'file',
-			'instructions' => 'Upload a PDF representing this country report summary.',
+			'instructions' => __('Upload a PDF representing this country report summary.', 'clade'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
@@ -74,7 +74,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_country_analysis',
-			'label' => 'Country analysis',
+			'label' => __('Country analysis', 'clade'),
 			'name' => 'country_analysis',
 			'type' => 'wysiwyg',
 			'instructions' => '',
@@ -112,14 +112,14 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57d885f2bb20b',
-	'title' => 'Data collection files',
+	'title' => __('Data collection files', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57d885f9750e9',
-			'label' => 'PDF',
+			'label' => __('PDF', 'clade'),
 			'name' => 'pdf',
 			'type' => 'file',
-			'instructions' => 'Upload or select data/report in PDF format for download.',
+			'instructions' => __('Upload or select data/report in PDF format for download.', 'clade'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
@@ -135,7 +135,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e58604e46db',
-			'label' => 'CSV File',
+			'label' => __('CSV File', 'clade'),
 			'name' => 'has_csv',
 			'type' => 'true_false',
 			'instructions' => '',
@@ -146,15 +146,15 @@ acf_add_local_field_group(array (
 				'class' => '',
 				'id' => '',
 			),
-			'message' => 'Upload CSV file',
+			'message' => __('Upload CSV file', 'clade'),
 			'default_value' => 0,
 		),
 		array (
 			'key' => 'field_57d8860f750ea',
-			'label' => 'CSV',
+			'label' => __('CSV', 'clade'),
 			'name' => 'csv',
 			'type' => 'file',
-			'instructions' => 'Upload or select a CSV file for chart generation.',
+			'instructions' => __('Upload or select a CSV file for chart generation.', 'clade'),
 			'required' => 0,
 			'conditional_logic' => array (
 				array (
@@ -178,7 +178,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_chart_type',
-			'label' => 'Chart type',
+			'label' => __('Chart type', 'clade'),
 			'name' => 'chart_type',
 			'type' => 'select',
 			'instructions' => '',
@@ -198,13 +198,13 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'choices' => array (
-				'column' => 'Column',
-				'bar' => 'Bar',
-				'area' => 'Area',
-				'areaspline' => 'Area spline',
-				'line' => 'Line',
-				'spline' => 'Spline',
-				'scatter' => 'Scatter'
+				'column' => __('Column', 'clade'),
+				'bar' => __('Bar', 'clade'),
+				'area' => __('Area', 'clade'),
+				'areaspline' => __('Area spline', 'clade'),
+				'line' => __('Line', 'clade'),
+				'spline' => __('Spline', 'clade'),
+				'scatter' => __('Scatter', 'clade')
 			),
 			'allow_null' => 0,
 			'default_value' => 'column',
@@ -215,7 +215,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_stacking',
-			'label' => 'Stacking',
+			'label' => __('Stacking', 'clade'),
 			'name' => 'stacking',
 			'type' => 'select',
 			'instructions' => '',
@@ -235,8 +235,8 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'choices' => array (
-				'normal' => 'Normal',
-				'percent' => 'Percentage',
+				'normal' => __('Normal', 'clade'),
+				'percent' => __('Percentage', 'clade'),
 			),
 			'allow_null' => 1,
 			'default_value' => '',
@@ -247,7 +247,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e58616e46dc',
-			'label' => 'Plot line number',
+			'label' => __('Plot line number', 'clade'),
 			'name' => 'plot_line_number',
 			'type' => 'text',
 			'instructions' => '',
@@ -274,7 +274,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e58649e46dd',
-			'label' => 'Plot line text',
+			'label' => __('Plot line text', 'clade'),
 			'name' => 'plot_line_text',
 			'type' => 'text',
 			'instructions' => '',
@@ -301,7 +301,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_chart_legend',
-			'label' => 'Custom chart legend',
+			'label' => __('Custom chart legend', 'clade'),
 			'name' => 'chart_legend',
 			'type' => 'wysiwyg',
 			'instructions' => '',
@@ -347,11 +347,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57ebcc43bd544',
-	'title' => 'Home',
+	'title' => __('Home', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57ebcc49165c0',
-			'label' => 'Introduction',
+			'label' => __('Introduction', 'clade'),
 			'name' => 'home_intro',
 			'type' => 'wysiwyg',
 			'instructions' => '',
@@ -369,7 +369,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57ebcc70165c1',
-			'label' => '"Learn more" page',
+			'label' => __('"Learn more" page', 'clade'),
 			'name' => 'learn_more_page',
 			'type' => 'post_object',
 			'instructions' => '',
@@ -428,11 +428,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57ea812eab13f',
-	'title' => 'Methodology',
+	'title' => __('Methodology', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57ea8136f1051',
-			'label' => 'Methodology Item',
+			'label' => __('Methodology Item', 'clade'),
 			'name' => 'methodology_item',
 			'type' => 'repeater',
 			'instructions' => '',
@@ -447,11 +447,11 @@ acf_add_local_field_group(array (
 			'min' => '',
 			'max' => '',
 			'layout' => 'row',
-			'button_label' => 'Adicionar Linha',
+			'button_label' => __('Add methodology item', 'clade'),
 			'sub_fields' => array (
 				array (
 					'key' => 'field_57ea8149f1052',
-					'label' => 'Title',
+					'label' => __('Title', 'clade'),
 					'name' => 'title',
 					'type' => 'text',
 					'instructions' => '',
@@ -470,7 +470,7 @@ acf_add_local_field_group(array (
 				),
 				// array (
 				// 	'key' => 'field_57ea8188f1053',
-				// 	'label' => 'Icon',
+				// 	'label' => __('Icon', 'clade'),
 				// 	'name' => 'icon',
 				// 	'type' => 'font-awesome',
 				// 	'instructions' => '',
@@ -1126,7 +1126,7 @@ acf_add_local_field_group(array (
 				// ),
 				array (
 					'key' => 'field_57ea81a1f1054',
-					'label' => 'Content',
+					'label' => __('Content', 'clade'),
 					'name' => 'content',
 					'type' => 'wysiwyg',
 					'instructions' => '',
@@ -1177,11 +1177,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57e94d4dc1b91',
-	'title' => 'Table layout',
+	'title' => __('Table layout', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57e94d5192a2d',
-			'label' => 'Table rows',
+			'label' => __('Table rows', 'clade'),
 			'name' => 'table_rows',
 			'type' => 'taxonomy',
 			'instructions' => '',
@@ -1203,7 +1203,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e94d5992a2e',
-			'label' => 'Table columns',
+			'label' => __('Table columns', 'clade'),
 			'name' => 'table_columns',
 			'type' => 'taxonomy',
 			'instructions' => '',
@@ -1245,11 +1245,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57e5708f6ffe8',
-	'title' => 'Term thumbnail',
+	'title' => __('Term thumbnail', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57e5709484c25',
-			'label' => 'Thumbnail',
+			'label' => __('Thumbnail', 'clade'),
 			'name' => 'thumbnail',
 			'type' => 'image',
 			'instructions' => '',
@@ -1293,11 +1293,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57e56b685da11',
-	'title' => 'Theme details',
+	'title' => __('Theme details', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_theme_description',
-			'label' => 'Description',
+			'label' => __('Description', 'clade'),
 			'name' => 'theme_description',
 			'type' => 'wysiwyg',
 			'instructions' => '',
@@ -1315,7 +1315,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e56deba6059',
-			'label' => 'Taxonomy',
+			'label' => __('Taxonomy', 'clade'),
 			'name' => 'taxonomy',
 			'type' => 'advanced_taxonomy_selector',
 			'instructions' => '',
@@ -1335,10 +1335,10 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_57e56bd7e9771',
-			'label' => 'Display chart',
+			'label' => __('Display chart', 'clade'),
 			'name' => 'has_chart',
 			'type' => 'true_false',
-			'instructions' => 'Select if this theme\'s data is chart enabled (using CSV data).',
+			'instructions' => __('Select if this theme\'s data is chart enabled (using CSV data).', 'clade'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
@@ -1346,12 +1346,12 @@ acf_add_local_field_group(array (
 				'class' => '',
 				'id' => '',
 			),
-			'message' => 'Display chart',
+			'message' => __('Display chart', 'clade'),
 			'default_value' => 0,
 		),
 		array (
 			'key' => 'field_57e5952a76261',
-			'label' => 'Representative color',
+			'label' => __('Representative color', 'clade'),
 			'name' => 'color',
 			'type' => 'color_picker',
 			'instructions' => '',
@@ -1386,11 +1386,11 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_57e56036083eb',
-	'title' => 'Theme Group',
+	'title' => __('Theme Group', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57e5603d943dd',
-			'label' => 'Themes',
+			'label' => __('Themes', 'clade'),
 			'name' => 'themes',
 			'type' => 'repeater',
 			'instructions' => '',
@@ -1405,11 +1405,11 @@ acf_add_local_field_group(array (
 			'min' => '',
 			'max' => '',
 			'layout' => 'table',
-			'button_label' => 'Adicionar Linha',
+			'button_label' => __('Add theme', 'clade'),
 			'sub_fields' => array (
 				array (
 					'key' => 'field_57e560c7943de',
-					'label' => 'Theme',
+					'label' => __('Theme', 'clade'),
 					'name' => 'theme',
 					'type' => 'post_object',
 					'instructions' => '',
@@ -1432,7 +1432,7 @@ acf_add_local_field_group(array (
 				),
 				array (
 					'key' => 'field_57e560e8943df',
-					'label' => 'Subthemes',
+					'label' => __('Subthemes', 'clade'),
 					'name' => 'subthemes',
 					'type' => 'post_object',
 					'instructions' => '',
@@ -1455,11 +1455,11 @@ acf_add_local_field_group(array (
 				),
 				array (
 					'key' => 'field_57e56141943e2',
-					'label' => 'Subthemes relationship',
+					'label' => __('Subthemes relationship', 'clade'),
 					'name' => 'subthemes_relation',
 					'type' => 'tag-it',
-					'instructions' => 'Space separated type of relation.
-E.g.: / * + -',
+					'instructions' => __('Space separated type of relation.
+E.g.: / * + -', 'clade'),
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array (
@@ -1493,14 +1493,14 @@ E.g.: / * + -',
 
 acf_add_local_field_group(array (
 	'key' => 'group_57d8617395ad9',
-	'title' => 'Country details',
+	'title' => __('Country details', 'clade'),
 	'fields' => array (
 		array (
 			'key' => 'field_57d8892bbc6db',
-			'label' => 'Countries',
+			'label' => __('Countries', 'clade'),
 			'name' => 'countries',
 			'type' => 'repeater',
-			'instructions' => 'Detail and comment specific countries relationship for this theme group',
+			'instructions' => __('Detail and comment specific countries relationship for this theme group', 'clade'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
@@ -1512,11 +1512,11 @@ acf_add_local_field_group(array (
 			'min' => '',
 			'max' => '',
 			'layout' => 'row',
-			'button_label' => 'Adicionar Linha',
+			'button_label' => __('Add country', 'clade'),
 			'sub_fields' => array (
 				array (
 					'key' => 'field_57d8618e4b217',
-					'label' => 'Country',
+					'label' => __('Country', 'clade'),
 					'name' => 'country',
 					'type' => 'taxonomy',
 					'instructions' => '',
@@ -1538,7 +1538,7 @@ acf_add_local_field_group(array (
 				),
 				array (
 					'key' => 'field_57d861ae4b218',
-					'label' => 'Details and comments',
+					'label' => __('Details and comments', 'clade'),
 					'name' => 'country_details',
 					'type' => 'wysiwyg',
 					'instructions' => '',

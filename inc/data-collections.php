@@ -22,7 +22,7 @@ function clade_data_download_button() {
   ?>
   <<?php echo $tag; ?> class="button button-small file-download" href="<?php echo $href; ?>">
     <span class="fa fa-download"></span>
-    Download
+    <?php _e('Download', 'clade'); ?>
     <?php if(count($files) > 1) : ?>
       <span class="formats"><?php
         foreach($files as $file) :

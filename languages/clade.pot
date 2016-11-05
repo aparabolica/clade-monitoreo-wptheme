@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 16:22-0200\n"
+"POT-Creation-Date: 2016-11-05 15:38-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:60
+#: functions.php:63
 msgid "Header navigation"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:64
 msgid "Footer navigation"
 msgstr ""
 
-#: functions.php:70
+#: functions.php:73
 msgid "Footer widgets"
+msgstr ""
+
+#: homepage.php:22
+msgid "Read more"
+msgstr ""
+
+#: homepage.php:29
+msgid "Analysis"
 msgstr ""
 
 #: inc/countries.php:17
@@ -71,11 +79,16 @@ msgstr ""
 msgid "New country name"
 msgstr ""
 
-#: inc/countries.php:27
+#: inc/countries.php:27 inc/field-groups.php:1500
 msgid "Countries"
 msgstr ""
 
-#: inc/data-collections.php:59
+#: inc/data-collections.php:25
+msgid "Download"
+msgstr ""
+
+#: inc/data-collections.php:59 inc/field-groups.php:11
+#: inc/field-groups.php:1412
 msgid "Theme"
 msgstr ""
 
@@ -210,136 +223,366 @@ msgstr ""
 msgid "Data categories"
 msgstr ""
 
-#: inc/themes.php:18
+#: inc/field-groups.php:7
+msgid "Associated theme"
+msgstr ""
+
+#: inc/field-groups.php:54
+msgid "Country metadata"
+msgstr ""
+
+#: inc/field-groups.php:58
+msgid "Country report"
+msgstr ""
+
+#: inc/field-groups.php:61
+msgid "Upload a PDF representing this country report summary."
+msgstr ""
+
+#: inc/field-groups.php:77 taxonomy-country.php:57
+msgid "Country analysis"
+msgstr ""
+
+#: inc/field-groups.php:115
+msgid "Data collection files"
+msgstr ""
+
+#: inc/field-groups.php:119
+msgid "PDF"
+msgstr ""
+
+#: inc/field-groups.php:122
+msgid "Upload or select data/report in PDF format for download."
+msgstr ""
+
+#: inc/field-groups.php:138
+msgid "CSV File"
+msgstr ""
+
+#: inc/field-groups.php:149
+msgid "Upload CSV file"
+msgstr ""
+
+#: inc/field-groups.php:154
+msgid "CSV"
+msgstr ""
+
+#: inc/field-groups.php:157
+msgid "Upload or select a CSV file for chart generation."
+msgstr ""
+
+#: inc/field-groups.php:181
+msgid "Chart type"
+msgstr ""
+
+#: inc/field-groups.php:201
+msgid "Column"
+msgstr ""
+
+#: inc/field-groups.php:202
+msgid "Bar"
+msgstr ""
+
+#: inc/field-groups.php:203
+msgid "Area"
+msgstr ""
+
+#: inc/field-groups.php:204
+msgid "Area spline"
+msgstr ""
+
+#: inc/field-groups.php:205
+msgid "Line"
+msgstr ""
+
+#: inc/field-groups.php:206
+msgid "Spline"
+msgstr ""
+
+#: inc/field-groups.php:207
+msgid "Scatter"
+msgstr ""
+
+#: inc/field-groups.php:218
+msgid "Stacking"
+msgstr ""
+
+#: inc/field-groups.php:238
+msgid "Normal"
+msgstr ""
+
+#: inc/field-groups.php:239
+msgid "Percentage"
+msgstr ""
+
+#: inc/field-groups.php:250
+msgid "Plot line number"
+msgstr ""
+
+#: inc/field-groups.php:277
+msgid "Plot line text"
+msgstr ""
+
+#: inc/field-groups.php:304
+msgid "Custom chart legend"
+msgstr ""
+
+#: inc/field-groups.php:350
+msgid "Home"
+msgstr ""
+
+#: inc/field-groups.php:354
+msgid "Introduction"
+msgstr ""
+
+#: inc/field-groups.php:372
+msgid "\"Learn more\" page"
+msgstr ""
+
+#: inc/field-groups.php:431
+msgid "Methodology"
+msgstr ""
+
+#: inc/field-groups.php:435
+msgid "Methodology Item"
+msgstr ""
+
+#: inc/field-groups.php:450
+msgid "Add methodology item"
+msgstr ""
+
+#: inc/field-groups.php:454
+msgid "Title"
+msgstr ""
+
+#: inc/field-groups.php:1129
+msgid "Content"
+msgstr ""
+
+#: inc/field-groups.php:1180
+msgid "Table layout"
+msgstr ""
+
+#: inc/field-groups.php:1184
+msgid "Table rows"
+msgstr ""
+
+#: inc/field-groups.php:1206
+msgid "Table columns"
+msgstr ""
+
+#: inc/field-groups.php:1248
+msgid "Term thumbnail"
+msgstr ""
+
+#: inc/field-groups.php:1252
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/field-groups.php:1296
+msgid "Theme details"
+msgstr ""
+
+#: inc/field-groups.php:1300
+msgid "Description"
+msgstr ""
+
+#: inc/field-groups.php:1318
+msgid "Taxonomy"
+msgstr ""
+
+#: inc/field-groups.php:1338 inc/field-groups.php:1349
+msgid "Display chart"
+msgstr ""
+
+#: inc/field-groups.php:1341
+msgid "Select if this theme's data is chart enabled (using CSV data)."
+msgstr ""
+
+#: inc/field-groups.php:1354
+msgid "Representative color"
+msgstr ""
+
+#: inc/field-groups.php:1389
+msgid "Theme Group"
+msgstr ""
+
+#: inc/field-groups.php:1393
+msgid "Themes"
+msgstr ""
+
+#: inc/field-groups.php:1408
+msgid "Add theme"
+msgstr ""
+
+#: inc/field-groups.php:1435
+msgid "Subthemes"
+msgstr ""
+
+#: inc/field-groups.php:1458
+msgid "Subthemes relationship"
+msgstr ""
+
+#: inc/field-groups.php:1461
+msgid ""
+"Space separated type of relation.\n"
+"E.g.: / * + -"
+msgstr ""
+
+#: inc/field-groups.php:1496
+msgid "Country details"
+msgstr ""
+
+#: inc/field-groups.php:1503
+msgid "Detail and comment specific countries relationship for this theme group"
+msgstr ""
+
+#: inc/field-groups.php:1515
+msgid "Add country"
+msgstr ""
+
+#: inc/field-groups.php:1519
+msgid "Country"
+msgstr ""
+
+#: inc/field-groups.php:1541
+msgid "Details and comments"
+msgstr ""
+
+#: inc/themes.php:19
 msgctxt "post type general name"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:19
+#: inc/themes.php:20
 msgctxt "post type singular name"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:20
+#: inc/themes.php:21
 msgctxt "admin menu"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:21
+#: inc/themes.php:22
 msgctxt "add new on admin bar"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:22
+#: inc/themes.php:23
 msgctxt "theme"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:23
+#: inc/themes.php:24
 msgid "Add new theme"
 msgstr ""
 
-#: inc/themes.php:24
+#: inc/themes.php:25
 msgid "New theme"
 msgstr ""
 
-#: inc/themes.php:25
+#: inc/themes.php:26
 msgid "Edit theme"
 msgstr ""
 
-#: inc/themes.php:26
+#: inc/themes.php:27
 msgid "View theme"
 msgstr ""
 
-#: inc/themes.php:27
+#: inc/themes.php:28
 msgid "All themes"
 msgstr ""
 
-#: inc/themes.php:28
+#: inc/themes.php:29
 msgid "Search themes"
 msgstr ""
 
-#: inc/themes.php:29
+#: inc/themes.php:30
 msgid "Parent themes:"
 msgstr ""
 
-#: inc/themes.php:30
+#: inc/themes.php:31
 msgid "No themes found."
 msgstr ""
 
-#: inc/themes.php:31
+#: inc/themes.php:32
 msgid "No themes found in trash."
 msgstr ""
 
-#: inc/themes.php:35 inc/themes.php:70
+#: inc/themes.php:36 inc/themes.php:71
 msgid "CLADE Theme Groups"
 msgstr ""
 
-#: inc/themes.php:53
+#: inc/themes.php:54
 msgctxt "post type general name"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:54
+#: inc/themes.php:55
 msgctxt "post type singular name"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:55
+#: inc/themes.php:56
 msgctxt "admin menu"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:56
+#: inc/themes.php:57
 msgctxt "add new on admin bar"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:57
+#: inc/themes.php:58
 msgctxt "theme group"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:58
+#: inc/themes.php:59
 msgid "Add new theme group"
 msgstr ""
 
-#: inc/themes.php:59
+#: inc/themes.php:60
 msgid "New theme group"
 msgstr ""
 
-#: inc/themes.php:60
+#: inc/themes.php:61
 msgid "Edit theme group"
 msgstr ""
 
-#: inc/themes.php:61
+#: inc/themes.php:62
 msgid "View theme group"
 msgstr ""
 
-#: inc/themes.php:62
+#: inc/themes.php:63
 msgid "All theme groups"
 msgstr ""
 
-#: inc/themes.php:63
+#: inc/themes.php:64
 msgid "Search theme groups"
 msgstr ""
 
-#: inc/themes.php:64
+#: inc/themes.php:65
 msgid "Parent theme groups:"
 msgstr ""
 
-#: inc/themes.php:65
+#: inc/themes.php:66
 msgid "No theme groups found."
 msgstr ""
 
-#: inc/themes.php:66
+#: inc/themes.php:67
 msgid "No theme groups found in trash."
 msgstr ""
 
-#: parts/theme-item.php:130 parts/theme-item.php:145 parts/theme-item.php:158
+#: parts/theme-item.php:131 parts/theme-item.php:146 parts/theme-item.php:159
 msgid "There's not enough data to display"
 msgstr ""
 
-#: taxonomy-country.php:57
-msgid "Country analysis"
+#: taxonomy-country.php:12
+msgid "Analysis from"
+msgstr ""
+
+#: taxonomy-country.php:23
+msgid "Download analysis"
 msgstr ""

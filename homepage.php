@@ -19,14 +19,14 @@
               <span class="group-item">
                 <a class="button button-secondary" href="<?php echo get_permalink($learn_more_page); ?>">
                   <span class="fa fa-align-left"></span>
-                  Leer más
+                  <?php _e('Read more', 'clade'); ?>
                 </a>
               </span>
             <?php endif; ?>
             <span class="group-item">
               <a class="button" href="<?php echo get_post_type_archive_link('theme-group'); ?>">
                 <span class="fa fa-bar-chart"></span>
-                Analisis
+                <?php _e('Analysis', 'clade'); ?>
               </a>
             </span>
           </p>
