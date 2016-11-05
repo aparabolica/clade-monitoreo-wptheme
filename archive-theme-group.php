@@ -4,7 +4,7 @@
   <header class="page-header">
     <div class="container">
       <div class="twelve columns">
-        <h1>Análisis</h1>
+        <h1><?php _e('Analysis', 'clade'); ?></h1>
         <nav class="page-header-nav">
           <?php while(have_posts()) : the_post(); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -37,7 +37,7 @@
         <div class="twelve columns">
           <div class="page-section">
             <div class="section-title">
-              <h2>Análisis por país</h2>
+              <h2><?php _e('Country analysis', 'clade'); ?></h2>
             </div>
             <div class="section-content">
               <?php

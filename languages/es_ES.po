@@ -3,586 +3,595 @@
 # This file is distributed under the same license as the clade package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 18:37-0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-11-05 15:38-0200\n"
+"PO-Revision-Date: 2016-11-05 18:34-0200\n"
+"Last-Translator: Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, "
+"2016\n"
+"Language-Team: Spanish (https://www.transifex.com/ecologia-digital/"
+"teams/68900/es/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: archive-theme-group.php:7 homepage.php:29
-msgid "Analysis"
-msgstr ""
-
-#: archive-theme-group.php:40 inc/field-groups.php:77 taxonomy-country.php:57
-msgid "Country analysis"
-msgstr ""
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: functions.php:63
 msgid "Header navigation"
-msgstr ""
+msgstr "Navegación en la cabecera"
 
 #: functions.php:64
 msgid "Footer navigation"
-msgstr ""
+msgstr "Navegación en el pie"
 
 #: functions.php:73
 msgid "Footer widgets"
-msgstr ""
+msgstr "Widgets en el pie"
 
 #: homepage.php:22
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
+
+#: homepage.php:29
+msgid "Analysis"
+msgstr "Análisis"
 
 #: inc/countries.php:17
 msgctxt "taxonomy general name"
 msgid "Countries"
-msgstr ""
+msgstr "Países"
 
 #: inc/countries.php:18
 msgctxt "taxonomy singular name"
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: inc/countries.php:19
 msgid "Search countries"
-msgstr ""
+msgstr "Buscar países"
 
 #: inc/countries.php:20
 msgid "All countries"
-msgstr ""
+msgstr "Todos los países"
 
 #: inc/countries.php:21
 msgid "Parent country"
-msgstr ""
+msgstr "País padre"
 
 #: inc/countries.php:22
 msgid "Parent country:"
-msgstr ""
+msgstr "País padre:"
 
 #: inc/countries.php:23
 msgid "Edit country"
-msgstr ""
+msgstr "Editar país"
 
 #: inc/countries.php:24
 msgid "Update country"
-msgstr ""
+msgstr "Actualizar país"
 
 #: inc/countries.php:25
 msgid "Add new country"
-msgstr ""
+msgstr "Añadir nuevo país"
 
 #: inc/countries.php:26
 msgid "New country name"
-msgstr ""
+msgstr "Nombre del nuevo país"
 
 #: inc/countries.php:27 inc/field-groups.php:1500
 msgid "Countries"
-msgstr ""
+msgstr "Países"
 
 #: inc/data-collections.php:25
 msgid "Download"
-msgstr ""
+msgstr "Descargar"
 
 #: inc/data-collections.php:59 inc/field-groups.php:11
 #: inc/field-groups.php:1412
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: inc/data-collections.php:60
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: inc/data-collections.php:64
 msgid "Files"
-msgstr ""
+msgstr "Archivos"
 
 #: inc/data-collections.php:106
 msgctxt "post type general name"
 msgid "Data collections"
-msgstr ""
+msgstr "Colecciones de datos"
 
 #: inc/data-collections.php:107
 msgctxt "post type singular name"
 msgid "Data collection"
-msgstr ""
+msgstr "Colección de datos"
 
 #: inc/data-collections.php:108
 msgctxt "admin menu"
 msgid "Data collections"
-msgstr ""
+msgstr "Colecciones de datos"
 
 #: inc/data-collections.php:109
 msgctxt "add new on admin bar"
 msgid "Data collection"
-msgstr ""
+msgstr "Colección de datos"
 
 #: inc/data-collections.php:110
 msgctxt "data collection"
 msgid "Add new"
-msgstr ""
+msgstr "Añadir nuevo"
 
 #: inc/data-collections.php:111
 msgid "Add new data collection"
-msgstr ""
+msgstr "Añadir nueva colección de datos"
 
 #: inc/data-collections.php:112
 msgid "New data collection"
-msgstr ""
+msgstr "Nueva colección de datos"
 
 #: inc/data-collections.php:113
 msgid "Edit data collection item"
-msgstr ""
+msgstr "Editar ítem de colección de datos"
 
 #: inc/data-collections.php:114
 msgid "View data collection"
-msgstr ""
+msgstr "Ver colección de datos"
 
 #: inc/data-collections.php:115
 msgid "All data collections"
-msgstr ""
+msgstr "Todas las colecciones de datos"
 
 #: inc/data-collections.php:116
 msgid "Search data collections"
-msgstr ""
+msgstr "Buscar colecciones de datos"
 
 #: inc/data-collections.php:117
 msgid "Parent data collections:"
-msgstr ""
+msgstr "Colecciones de datos padres:"
 
 #: inc/data-collections.php:118
 msgid "No data collections found."
-msgstr ""
+msgstr "Ninguna colección de datos encontrada."
 
 #: inc/data-collections.php:119
 msgid "No data collections found in trash."
-msgstr ""
+msgstr "Ninguna colección de datos encontrada en la papelera."
 
 #: inc/data-collections.php:123
 msgid "CLADE Data Collections"
-msgstr ""
+msgstr "Colecciones de Datos de la CLADE"
 
 #: inc/data-collections.php:143
 msgctxt "taxonomy general name"
 msgid "Data categories"
-msgstr ""
+msgstr "Categorías de datos"
 
 #: inc/data-collections.php:144
 msgctxt "taxonomy singular name"
 msgid "Data category"
-msgstr ""
+msgstr "Categoría de datos"
 
 #: inc/data-collections.php:145
 msgid "Search data categories"
-msgstr ""
+msgstr "Buscar categorías de datos"
 
 #: inc/data-collections.php:146
 msgid "Popular data categories"
-msgstr ""
+msgstr "Categorías de datos populares"
 
 #: inc/data-collections.php:147
 msgid "All data categories"
-msgstr ""
+msgstr "Todas las categorías de datos"
 
 #: inc/data-collections.php:150
 msgid "Edit data category"
-msgstr ""
+msgstr "Editar categoría de datos"
 
 #: inc/data-collections.php:151
 msgid "Update data category"
-msgstr ""
+msgstr "Actualizar categoría de datos"
 
 #: inc/data-collections.php:152
 msgid "Add New data category"
-msgstr ""
+msgstr "Añadir nueva categoría de datos"
 
 #: inc/data-collections.php:153
 msgid "New data category Name"
-msgstr ""
+msgstr "Nombre de la nueva categoría de datos"
 
 #: inc/data-collections.php:154
 msgid "Separate writers with commas"
-msgstr ""
+msgstr "Separa los escritores con comas"
 
 #: inc/data-collections.php:155
 msgid "Add or remove writers"
-msgstr ""
+msgstr "Añadir o remover escritores"
 
 #: inc/data-collections.php:156
 msgid "Choose from the most used writers"
-msgstr ""
+msgstr "Escoja a partir de los escritores más usados"
 
 #: inc/data-collections.php:157
 msgid "No writers found."
-msgstr ""
+msgstr "Ningún escritor encontrado."
 
 #: inc/data-collections.php:158
 msgid "Data categories"
-msgstr ""
+msgstr "Categorías de datosq"
 
 #: inc/field-groups.php:7
 msgid "Associated theme"
-msgstr ""
+msgstr "Tema asociado"
 
 #: inc/field-groups.php:54
 msgid "Country metadata"
-msgstr ""
+msgstr "Metadatos del país"
 
 #: inc/field-groups.php:58
 msgid "Country report"
-msgstr ""
+msgstr "Informe del país"
 
 #: inc/field-groups.php:61
 msgid "Upload a PDF representing this country report summary."
-msgstr ""
+msgstr "Suba un PDF representando el resumen del informe de este país."
+
+#: inc/field-groups.php:77 taxonomy-country.php:57
+msgid "Country analysis"
+msgstr "Análisis del país"
 
 #: inc/field-groups.php:115
 msgid "Data collection files"
-msgstr ""
+msgstr "Archivos de la colección de datos"
 
 #: inc/field-groups.php:119
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: inc/field-groups.php:122
 msgid "Upload or select data/report in PDF format for download."
-msgstr ""
+msgstr "Suba o seleccione un dato/informe en formato PDF para descargar."
 
 #: inc/field-groups.php:138
 msgid "CSV File"
-msgstr ""
+msgstr "Archivo CSV"
 
 #: inc/field-groups.php:149
 msgid "Upload CSV file"
-msgstr ""
+msgstr "Suba un archivo CSV"
 
 #: inc/field-groups.php:154
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: inc/field-groups.php:157
 msgid "Upload or select a CSV file for chart generation."
-msgstr ""
+msgstr "Suba o seleccione un archivo CSV para la generación del gráfico."
 
 #: inc/field-groups.php:181
 msgid "Chart type"
-msgstr ""
+msgstr "Tipo del gráfico"
 
 #: inc/field-groups.php:201
 msgid "Column"
-msgstr ""
+msgstr "Columnas"
 
 #: inc/field-groups.php:202
 msgid "Bar"
-msgstr ""
+msgstr "Barras"
 
 #: inc/field-groups.php:203
 msgid "Area"
-msgstr ""
+msgstr "Área"
 
 #: inc/field-groups.php:204
 msgid "Area spline"
-msgstr ""
+msgstr "Área suave"
 
 #: inc/field-groups.php:205
 msgid "Line"
-msgstr ""
+msgstr "Líneas"
 
 #: inc/field-groups.php:206
 msgid "Spline"
-msgstr ""
+msgstr "Líneas suaves"
 
 #: inc/field-groups.php:207
 msgid "Scatter"
-msgstr ""
+msgstr "Dispersión"
 
 #: inc/field-groups.php:218
 msgid "Stacking"
-msgstr ""
+msgstr "Apilamiento"
 
 #: inc/field-groups.php:238
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: inc/field-groups.php:239
 msgid "Percentage"
-msgstr ""
+msgstr "Porcentaje"
 
 #: inc/field-groups.php:250
 msgid "Plot line number"
-msgstr ""
+msgstr "Número de la línea marcadora"
 
 #: inc/field-groups.php:277
 msgid "Plot line text"
-msgstr ""
+msgstr "Texto de la línea marcadora"
 
 #: inc/field-groups.php:304
 msgid "Custom chart legend"
-msgstr ""
+msgstr "Leyenda personalizada del gráfico"
 
 #: inc/field-groups.php:350
 msgid "Home"
-msgstr ""
+msgstr "Portada"
 
 #: inc/field-groups.php:354
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #: inc/field-groups.php:372
 msgid "\"Learn more\" page"
-msgstr ""
+msgstr "Página \"Leer más\""
 
 #: inc/field-groups.php:431
 msgid "Methodology"
-msgstr ""
+msgstr "Metodología"
 
 #: inc/field-groups.php:435
 msgid "Methodology Item"
-msgstr ""
+msgstr "Ítem de metodología"
 
 #: inc/field-groups.php:450
 msgid "Add methodology item"
-msgstr ""
+msgstr "Añadir ítem de metodología"
 
 #: inc/field-groups.php:454
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: inc/field-groups.php:1129
 msgid "Content"
-msgstr ""
+msgstr "Contenido"
 
 #: inc/field-groups.php:1180
 msgid "Table layout"
-msgstr ""
+msgstr "Diseño de la tabla"
 
 #: inc/field-groups.php:1184
 msgid "Table rows"
-msgstr ""
+msgstr "Líneas de la tabla"
 
 #: inc/field-groups.php:1206
 msgid "Table columns"
-msgstr ""
+msgstr "Columnas de la tabla"
 
 #: inc/field-groups.php:1248
 msgid "Term thumbnail"
-msgstr ""
+msgstr "Miniatura"
 
 #: inc/field-groups.php:1252
 msgid "Thumbnail"
-msgstr ""
+msgstr "Miniatura"
 
 #: inc/field-groups.php:1296
 msgid "Theme details"
-msgstr ""
+msgstr "Detalles del tema"
 
 #: inc/field-groups.php:1300
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: inc/field-groups.php:1318
 msgid "Taxonomy"
-msgstr ""
+msgstr "Taxonomía"
 
 #: inc/field-groups.php:1338 inc/field-groups.php:1349
 msgid "Display chart"
-msgstr ""
+msgstr "Mostrar gráfico"
 
 #: inc/field-groups.php:1341
 msgid "Select if this theme's data is chart enabled (using CSV data)."
 msgstr ""
+"Seleccione si los datos de este tema son habilitados para gráfico (usando "
+"datos CSV)."
 
 #: inc/field-groups.php:1354
 msgid "Representative color"
-msgstr ""
+msgstr "Color representativa"
 
 #: inc/field-groups.php:1389
 msgid "Theme Group"
-msgstr ""
+msgstr "Grupo de Temas"
 
 #: inc/field-groups.php:1393
 msgid "Themes"
-msgstr ""
+msgstr "Temas"
 
 #: inc/field-groups.php:1408
 msgid "Add theme"
-msgstr ""
+msgstr "Añadir tema"
 
 #: inc/field-groups.php:1435
 msgid "Subthemes"
-msgstr ""
+msgstr "Subtemas"
 
 #: inc/field-groups.php:1458
 msgid "Subthemes relationship"
-msgstr ""
+msgstr "Relación de los subtemas"
 
 #: inc/field-groups.php:1461
 msgid ""
 "Space separated type of relation.\n"
 "E.g.: / * + -"
 msgstr ""
+"Tipo de relación separada por espacio.\n"
+"P.ej.: / * + -"
 
 #: inc/field-groups.php:1496
 msgid "Country details"
-msgstr ""
+msgstr "Detalles del país"
 
 #: inc/field-groups.php:1503
 msgid "Detail and comment specific countries relationship for this theme group"
 msgstr ""
+"Detalles y comentarios relacionados a países específicos para este grupo de "
+"tema"
 
 #: inc/field-groups.php:1515
 msgid "Add country"
-msgstr ""
+msgstr "Añadir país"
 
 #: inc/field-groups.php:1519
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: inc/field-groups.php:1541
 msgid "Details and comments"
-msgstr ""
+msgstr "Detalles y comentários"
 
 #: inc/themes.php:19
 msgctxt "post type general name"
 msgid "Themes"
-msgstr ""
+msgstr "Temas"
 
 #: inc/themes.php:20
 msgctxt "post type singular name"
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: inc/themes.php:21
 msgctxt "admin menu"
 msgid "Themes"
-msgstr ""
+msgstr "Temas"
 
 #: inc/themes.php:22
 msgctxt "add new on admin bar"
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: inc/themes.php:23
 msgctxt "theme"
 msgid "Add new"
-msgstr ""
+msgstr "Añadir nuevo"
 
 #: inc/themes.php:24
 msgid "Add new theme"
-msgstr ""
+msgstr "Añadir nuevo tema"
 
 #: inc/themes.php:25
 msgid "New theme"
-msgstr ""
+msgstr "Nuevo tema"
 
 #: inc/themes.php:26
 msgid "Edit theme"
-msgstr ""
+msgstr "Editar tema"
 
 #: inc/themes.php:27
 msgid "View theme"
-msgstr ""
+msgstr "Ver tema"
 
 #: inc/themes.php:28
 msgid "All themes"
-msgstr ""
+msgstr "Todos los temas"
 
 #: inc/themes.php:29
 msgid "Search themes"
-msgstr ""
+msgstr "Buscar temas"
 
 #: inc/themes.php:30
 msgid "Parent themes:"
-msgstr ""
+msgstr "Temas padres:"
 
 #: inc/themes.php:31
 msgid "No themes found."
-msgstr ""
+msgstr "Ningún tema encontrado."
 
 #: inc/themes.php:32
 msgid "No themes found in trash."
-msgstr ""
+msgstr "Ningún tema encontrado en la papelera."
 
 #: inc/themes.php:36 inc/themes.php:71
 msgid "CLADE Theme Groups"
-msgstr ""
+msgstr "Grupos de Temas de la CLADE"
 
 #: inc/themes.php:54
 msgctxt "post type general name"
 msgid "Theme groups"
-msgstr ""
+msgstr "Grupos de temas"
 
 #: inc/themes.php:55
 msgctxt "post type singular name"
 msgid "Theme group"
-msgstr ""
+msgstr "Grupo de tema"
 
 #: inc/themes.php:56
 msgctxt "admin menu"
 msgid "Theme groups"
-msgstr ""
+msgstr "Grupos de temas"
 
 #: inc/themes.php:57
 msgctxt "add new on admin bar"
 msgid "Theme group"
-msgstr ""
+msgstr "Grupo de tema"
 
 #: inc/themes.php:58
 msgctxt "theme group"
 msgid "Add new"
-msgstr ""
+msgstr "Añadir nuevo"
 
 #: inc/themes.php:59
 msgid "Add new theme group"
-msgstr ""
+msgstr "Añadir nuevo grupo de tema"
 
 #: inc/themes.php:60
 msgid "New theme group"
-msgstr ""
+msgstr "Nuevo grupo de tema"
 
 #: inc/themes.php:61
 msgid "Edit theme group"
-msgstr ""
+msgstr "Editar grupo de tema"
 
 #: inc/themes.php:62
 msgid "View theme group"
-msgstr ""
+msgstr "Ver grupo de tema"
 
 #: inc/themes.php:63
 msgid "All theme groups"
-msgstr ""
+msgstr "Todos los grupos de temas"
 
 #: inc/themes.php:64
 msgid "Search theme groups"
-msgstr ""
+msgstr "Buscar grupos de temas"
 
 #: inc/themes.php:65
 msgid "Parent theme groups:"
-msgstr ""
+msgstr "Grupos de temas padres:"
 
 #: inc/themes.php:66
 msgid "No theme groups found."
-msgstr ""
+msgstr "Ningún grupo de tema encontrado."
 
 #: inc/themes.php:67
 msgid "No theme groups found in trash."
-msgstr ""
+msgstr "Ningún grupo de tema encontrado en la papelera."
 
-#: parts/theme-item.php:132 parts/theme-item.php:147 parts/theme-item.php:160
+#: parts/theme-item.php:131 parts/theme-item.php:146 parts/theme-item.php:159
 msgid "There's not enough data to display"
-msgstr ""
+msgstr "No hay datos suficientes para exibir"
 
 #: taxonomy-country.php:12
 msgid "Analysis from"
-msgstr ""
+msgstr "Análisis de"
 
 #: taxonomy-country.php:23
 msgid "Download analysis"
-msgstr ""
+msgstr "Descargar análisis"
