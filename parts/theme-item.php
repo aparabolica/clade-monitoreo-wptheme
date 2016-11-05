@@ -8,6 +8,7 @@ $rows = get_field('table_rows');
 $cols = get_field('table_columns');
 
 // Taxonomy filterable terms
+$terms = false; // clear terms before continuing
 $taxonomy = get_field('taxonomy');
 if($taxonomy) {
   $taxonomy = array_shift($taxonomy);
