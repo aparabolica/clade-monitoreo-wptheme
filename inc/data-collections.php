@@ -12,6 +12,13 @@ function clade_data_download_button() {
   $csv = get_field('csv');
   if($csv) $files[] = $csv;
 
+  $other = get_field('data_other_files');
+  if($other) {
+    foreach($other as $other_file) {
+      $files[] = $other_file['file'];
+    }
+  }
+
   $tag = 'a';
   $href = $files[0]['url'];
 
