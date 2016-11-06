@@ -39,7 +39,6 @@ if($data_query->have_posts()) :
             <?php endif; ?>
             <?php if($term) : ?>
               var activated = false;
-              console.log('listening on chart');
               window.addEventListener('clickedTerm', function(e) {
                 if(e.detail == <?php echo $term->term_id; ?> && !activated) {
                   activated = true;

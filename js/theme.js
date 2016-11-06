@@ -70,10 +70,19 @@
 
         var $theme = $(this);
 
-        var $termNav = $theme.find('.term-list li');
+        /*
+         * local term and tree nav
+         */
+        // var $termNav = $theme.find('.term-list li');
         var $treeNav = $theme.find('.tree-nav .tree-item');
+        // var $termItems = $theme.find('.term-item');
 
-        var $termItems = $theme.find('.term-item');
+        /*
+         * global term and tree nav
+         */
+        var $termNav = $('.theme-item .term-list li');
+        // var $treeNav = $('.theme-item .tree-nav .tree-item');
+        var $termItems = $('.theme-item .term-item');
 
         /*
          * Nav between tax terms items
@@ -83,9 +92,9 @@
           $termNav.addClass('clickable');
           $termNav.on('click', function(e) {
             e.preventDefault();
-            $termNav.removeClass('active');
-            $(this).addClass('active');
             var id = $(this).data('termid');
+            $termNav.removeClass('active');
+            $termNav.filter('[data-termid="' + id + '"]').addClass('active');
             $termItems.hide();
             $termItems.filter('[data-termid="' + id + '"]').show();
             var evt = new CustomEvent('clickedTerm', {detail: id});
