@@ -91,7 +91,7 @@
             setTimeout(function() {
               var evt = new CustomEvent('clickedTerm', {detail: id});
               window.dispatchEvent(evt);
-            }, 5);
+            }, 50);
             window.dispatchEvent(new Event('resize'));
           });
           $termNav.filter(':first-child').click();
