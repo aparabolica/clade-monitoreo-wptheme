@@ -88,10 +88,8 @@
             var id = $(this).data('termid');
             $termItems.hide();
             $termItems.filter('[data-termid="' + id + '"]').show();
-            setTimeout(function() {
-              var evt = new CustomEvent('clickedTerm', {detail: id});
-              window.dispatchEvent(evt);
-            }, 50);
+            var evt = new CustomEvent('clickedTerm', {detail: id});
+            window.dispatchEvent(evt);
             window.dispatchEvent(new Event('resize'));
           });
           $termNav.filter(':first-child').click();

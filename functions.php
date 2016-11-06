@@ -113,7 +113,7 @@ function clade_scripts() {
   wp_enqueue_script('chart');
 
 }
-add_action('wp_enqueue_scripts', 'clade_scripts');
+add_action('wp_footer', 'clade_scripts');
 
 /**
  * Include features
