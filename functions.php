@@ -93,6 +93,12 @@ function clade_header_scripts() {
   wp_enqueue_style('main');
   wp_enqueue_style('responsive');
 
+  wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
+  wp_register_script('highcharts-more', get_template_directory_uri() . '/assets/highcharts/highcharts-more.js', array('highcharts'));
+  wp_register_script('highcharts.data', get_template_directory_uri() . '/assets/highcharts/modules/data.js', array('highcharts'));
+  wp_register_script('highcharts.export', get_template_directory_uri() . '/assets/highcharts/modules/exporting.js', array('highcharts'));
+  wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
+
   wp_register_script('chart', get_template_directory_uri() . '/js/chart.js', array('jquery', 'highcharts', 'highcharts.data', 'highcharts.export'), '0.0.8');
 
   wp_enqueue_script('chart');
@@ -103,16 +109,10 @@ add_action('wp_enqueue_scripts', 'clade_header_scripts');
 
 function clade_footer_scripts() {
 
-  wp_register_script('highcharts', get_template_directory_uri() . '/assets/highcharts/highcharts.js', array('jquery'));
-  wp_register_script('highcharts-more', get_template_directory_uri() . '/assets/highcharts/highcharts-more.js', array('highcharts'));
-  wp_register_script('highcharts.data', get_template_directory_uri() . '/assets/highcharts/modules/data.js', array('highcharts'));
-  wp_register_script('highcharts.export', get_template_directory_uri() . '/assets/highcharts/modules/exporting.js', array('highcharts'));
-  wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
+  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids'), '0.0.1');
 
   wp_register_script('theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '0.0.4');
   wp_register_script('table', get_template_directory_uri() . '/js/table.js', array('jquery'), '0.0.2');
-
-  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids'), '0.0.1');
 
   wp_enqueue_script('site');
 
