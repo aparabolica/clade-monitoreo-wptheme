@@ -1,6 +1,6 @@
 (function($) {
 
-  cladeChart = function(config) {
+  function cladeChart(config) {
     var chart = {
       chart: {
         type: config.type,
