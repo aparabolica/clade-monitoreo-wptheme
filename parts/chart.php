@@ -23,32 +23,35 @@ if($data_query->have_posts()) :
       </div>
       <script type="text/javascript">
         (function($) {
-          $.get('<?php echo $csv['url']; ?>', function(csv) {
-            var chartConfig = {
-              element: '#chart_<?php echo $chart_count; ?>_<?php the_ID(); ?>',
-              color: '<?php echo $color; ?>',
-              data: csv,
-              title: '<?php echo $theme_title; ?>',
-              subtitle: '<?php echo $term->name; ?>',
-              type: '<?php echo ($type ? $type : 'column'); ?>',
-              stacking: <?php echo ($stacking ? "'" . $stacking . "'" : 'null'); ?>
-            };
-            <?php if($plotline_number) : ?>
-              chartConfig.plotline = <?php echo $plotline_number ?>;
-              chartConfig.plotlineText = '<?php echo $plotline_text; ?>';
-            <?php endif; ?>
-            <?php if($term) : ?>
-              var activated = false;
-              window.addEventListener('clickedTerm', function(e) {
-                if(e.detail == <?php echo $term->term_id; ?> && !activated) {
-                  activated = true;
-                  cladeChart(chartConfig);
-                }
-              });
-            <?php else : ?>
+          var chart = function() {
+            $.get('<?php echo $csv['url']; ?>', function(csv) {
+              var chartConfig = {
+                element: '#chart_<?php echo $chart_count; ?>_<?php the_ID(); ?>',
+                color: '<?php echo $color; ?>',
+                data: csv,
+                title: '<?php echo $theme_title; ?>',
+                subtitle: '<?php echo $term->name; ?>',
+                type: '<?php echo ($type ? $type : 'column'); ?>',
+                stacking: <?php echo ($stacking ? "'" . $stacking . "'" : 'null'); ?>
+              };
+              <?php if($plotline_number) : ?>
+                chartConfig.plotline = <?php echo $plotline_number ?>;
+                chartConfig.plotlineText = '<?php echo $plotline_text; ?>';
+              <?php endif; ?>
               cladeChart(chartConfig);
-            <?php endif; ?>
-          });
+            });
+          };
+          <?php if($term) : ?>
+            var activated = false;
+            window.addEventListener('clickedTerm', function(e) {
+              if(e.detail == <?php echo $term->term_id; ?> && !activated) {
+                activated = true;
+                chart();
+              }
+            });
+          <?php else : ?>
+            chart();
+          <?php endif; ?>
         })(jQuery);
       </script>
     </div>
