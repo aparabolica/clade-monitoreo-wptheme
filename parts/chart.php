@@ -1,4 +1,5 @@
 <?php
+global $wp_the_query;
 global $data_query, $theme_id, $theme_title, $term;
 global $chart_count;
 if(!$chart_count)
@@ -41,7 +42,7 @@ if($data_query->have_posts()) :
               cladeChart(chartConfig);
             });
           };
-          <?php if($term) : ?>
+          <?php if($term && !$wp_the_query->is_tax($term->taxonomy)) : ?>
             var activated = false;
             window.addEventListener('clickedTerm', function(e) {
               if(e.detail == <?php echo $term->term_id; ?> && !activated) {
