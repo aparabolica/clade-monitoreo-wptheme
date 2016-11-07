@@ -32,7 +32,7 @@
         <?php endif; ?>
       </div>
     </div>
-    <?php clade_country_list(); ?>
+    <?php //clade_country_list(); ?>
   </section>
 </article>
 
