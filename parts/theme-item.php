@@ -8,6 +8,7 @@ $rows = get_field('table_rows');
 $cols = get_field('table_columns');
 
 // Taxonomy filterable terms
+$term = false; // clear terms before continuing
 $terms = false; // clear terms before continuing
 $taxonomy = get_field('taxonomy');
 if($taxonomy) {
@@ -140,7 +141,7 @@ $theme_class = '';
                 foreach($tax_queries as $tax_query) :
                   $data_query = clade_get_data_query($theme_id, array($tax_query));
                   ?>
-                  <div class="term-item" data-categories="<?php echo implode(',', $tax_query['terms']); ?>">
+                  <div class="cat-item" data-categories="<?php echo implode(',', $tax_query['terms']); ?>">
                     <?php if($data_query->have_posts()) : ?>
                       <?php get_template_part('parts/chart'); ?>
                     <?php else : ?>
@@ -153,7 +154,7 @@ $theme_class = '';
                 // Case for one chart (one data for the theme)
                 $data_query = clade_get_data_query($theme_id);
                 ?>
-                <div class="term-item">
+                <div class="data-item">
                   <?php if($data_query->have_posts()) : ?>
                     <?php get_template_part('parts/chart'); ?>
                   <?php else : ?>
