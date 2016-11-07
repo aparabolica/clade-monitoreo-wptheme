@@ -32,34 +32,7 @@
         <?php endif; ?>
       </div>
     </div>
-    <section id="countries">
-      <div class="container">
-        <div class="twelve columns">
-          <div class="page-section">
-            <div class="section-title">
-              <h2><?php _e('Analysis per country', 'clade'); ?></h2>
-            </div>
-            <div class="section-content">
-              <?php
-              $countries = get_terms('country', array(
-                'hide_empty' => false
-              ));
-              ?>
-              <ul class="term-list">
-                <?php
-                foreach($countries as $country) :
-                  $thumb = get_field('thumbnail', 'country_' . $country->term_id);
-                  ?>
-                  <li style="background-image: url(<?php echo $thumb; ?>);" title="<?php echo $country->term_title; ?>">
-                    <a href="<?php echo get_term_link($country); ?>" title="<?php $country->name; ?>"></a>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php clade_country_list(); ?>
   </section>
 </article>
 
