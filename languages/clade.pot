@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 19:13-0200\n"
+"POT-Creation-Date: 2016-11-08 13:58-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,6 @@ msgstr ""
 
 #: archive-theme-group.php:7 homepage.php:29
 msgid "Analysis"
-msgstr ""
-
-#: archive-theme-group.php:40
-msgid "Analysis per country"
 msgstr ""
 
 #: functions.php:63
@@ -41,50 +37,54 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/countries.php:17
+#: inc/countries.php:18
 msgctxt "taxonomy general name"
 msgid "Countries"
 msgstr ""
 
-#: inc/countries.php:18
+#: inc/countries.php:19
 msgctxt "taxonomy singular name"
 msgid "Country"
 msgstr ""
 
-#: inc/countries.php:19
+#: inc/countries.php:20
 msgid "Search countries"
 msgstr ""
 
-#: inc/countries.php:20
+#: inc/countries.php:21
 msgid "All countries"
 msgstr ""
 
-#: inc/countries.php:21
+#: inc/countries.php:22
 msgid "Parent country"
 msgstr ""
 
-#: inc/countries.php:22
+#: inc/countries.php:23
 msgid "Parent country:"
 msgstr ""
 
-#: inc/countries.php:23
+#: inc/countries.php:24
 msgid "Edit country"
 msgstr ""
 
-#: inc/countries.php:24
+#: inc/countries.php:25
 msgid "Update country"
 msgstr ""
 
-#: inc/countries.php:25
+#: inc/countries.php:26
 msgid "Add new country"
 msgstr ""
 
-#: inc/countries.php:26
+#: inc/countries.php:27
 msgid "New country name"
 msgstr ""
 
-#: inc/countries.php:27 inc/field-groups.php:1559
+#: inc/countries.php:28 inc/field-groups.php:1559
 msgid "Countries"
+msgstr ""
+
+#: inc/countries.php:62
+msgid "Analysis per country"
 msgstr ""
 
 #: inc/data-collections.php:32
@@ -591,7 +591,7 @@ msgstr ""
 msgid "No theme groups found in trash."
 msgstr ""
 
-#: parts/theme-item.php:132 parts/theme-item.php:147 parts/theme-item.php:160
+#: parts/theme-item.php:133 parts/theme-item.php:148 parts/theme-item.php:161
 msgid "There's not enough data to display"
 msgstr ""
 

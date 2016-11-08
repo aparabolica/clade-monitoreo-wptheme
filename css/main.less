@@ -240,8 +240,9 @@ button.file-download {
         float: left;
         color: #fff;
         margin: 0 2rem 0 0;
+        position: relative;
         &.current-menu-item {
-          a {
+          > a {
             border-top: 5px solid @orange;
             color: @orange;
           }
@@ -256,6 +257,40 @@ button.file-download {
           text-transform: uppercase;
           &:hover {
             color: @orange;
+          }
+        }
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+        ul {
+          width: 180px;
+          position: absolute;
+          z-index: 10;
+          top: 8rem;
+          left: -1rem;
+          padding-top: 1rem;
+          display: none;
+          li {
+            background: #192a1f;
+            float: none;
+            margin: 0;
+            border-bottom: 1px solid #101d15;
+            a {
+              text-transform: none;
+              font-size: .8em;
+              display: block;
+              margin: 0;
+              padding: 1rem;
+              border: 0;
+            }
+            &.current-menu-item {
+              > a {
+                border: 0;
+                color: @orange;
+              }
+            }
           }
         }
       }
