@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 13:58-0200\n"
+"POT-Creation-Date: 2016-11-08 14:02-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,10 +81,6 @@ msgstr ""
 
 #: inc/countries.php:28 inc/field-groups.php:1559
 msgid "Countries"
-msgstr ""
-
-#: inc/countries.php:62
-msgid "Analysis per country"
 msgstr ""
 
 #: inc/data-collections.php:32

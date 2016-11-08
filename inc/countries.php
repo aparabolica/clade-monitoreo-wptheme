@@ -38,13 +38,16 @@ class Clade_Countries {
     register_taxonomy( 'country', array( 'data-collection' ), $args );
   }
 
-  function country_list_shortcode() {
+  function country_list_shortcode($atts) {
+    $atts = shortcode_atts(array(
+      'title' => false
+    ), $atts, 'country_list');
     ob_start();
     ?>
     </div></div>
     <div class="country-list-shortcode">
     <?php
-    $this->country_list();
+    $this->country_list($atts['title']);
     ?>
     </div>
     <div class="container"><div class="eight columns offset-by-one">
@@ -52,15 +55,17 @@ class Clade_Countries {
     return ob_get_clean();
   }
 
-  function country_list() {
+  function country_list($title = false) {
     ?>
     <section id="countries">
       <div class="container">
         <div class="twelve columns">
           <div class="page-section">
-            <div class="section-title">
-              <h2><?php _e('Analysis per country', 'clade'); ?></h2>
-            </div>
+            <?php if($title) : ?>
+              <div class="section-title">
+                <h2><?php echo $title; ?></h2>
+              </div>
+            <?php endif; ?>
             <div class="section-content">
               <?php
               $countries = get_terms('country', array(
