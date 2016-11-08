@@ -21,7 +21,7 @@
             <ul class="theme-groups">
               <?php while(have_posts()) : the_post(); ?>
                 <li>
-                  <article class="theme-group">
+                  <article class="theme-group-list-item">
                     <h3 class="h"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <?php the_excerpt(); ?>
                   </article>
