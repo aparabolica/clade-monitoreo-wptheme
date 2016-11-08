@@ -31,10 +31,11 @@
         $themeGroup.find('.child-themes').remove();
       }
 
+      // console.log($themeGroup, $themeGroup.find('.theme-item').length);
       if(!$themeItems.length) {
 
         // Remove theme group without themes
-        $themeGroup.parents('.theme-group').remove();
+        $themeGroup.remove();
 
       } else if($themeItems.length > 1) {
 
@@ -140,5 +141,12 @@
       });
 
     });
+
+    // Clear empty theme groups
+    $('.theme-group').each(function() {
+      if(!$(this).find('.theme-group-item').length)
+      $(this).remove();
+    });
+    
   });
 })(jQuery);
