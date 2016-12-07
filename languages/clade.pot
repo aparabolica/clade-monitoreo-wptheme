@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 14:07-0200\n"
+"POT-Creation-Date: 2016-12-07 12:42-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: archive-theme-group.php:7 homepage.php:29
+#: archive-theme-group.php:10 homepage.php:29
 msgid "Analysis"
 msgstr ""
 
@@ -37,49 +37,49 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/countries.php:18
+#: inc/countries.php:17
 msgctxt "taxonomy general name"
 msgid "Countries"
 msgstr ""
 
-#: inc/countries.php:19
+#: inc/countries.php:18
 msgctxt "taxonomy singular name"
 msgid "Country"
 msgstr ""
 
-#: inc/countries.php:20
+#: inc/countries.php:19
 msgid "Search countries"
 msgstr ""
 
-#: inc/countries.php:21
+#: inc/countries.php:20
 msgid "All countries"
 msgstr ""
 
-#: inc/countries.php:22
+#: inc/countries.php:21
 msgid "Parent country"
 msgstr ""
 
-#: inc/countries.php:23
+#: inc/countries.php:22
 msgid "Parent country:"
 msgstr ""
 
-#: inc/countries.php:24
+#: inc/countries.php:23
 msgid "Edit country"
 msgstr ""
 
-#: inc/countries.php:25
+#: inc/countries.php:24
 msgid "Update country"
 msgstr ""
 
-#: inc/countries.php:26
+#: inc/countries.php:25
 msgid "Add new country"
 msgstr ""
 
-#: inc/countries.php:27
+#: inc/countries.php:26
 msgid "New country name"
 msgstr ""
 
-#: inc/countries.php:28 inc/field-groups.php:1559
+#: inc/countries.php:27 inc/field-groups.php:1559
 msgid "Countries"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr ""
 msgid "Upload a PDF representing this country report summary."
 msgstr ""
 
-#: inc/field-groups.php:77 taxonomy-country.php:57
+#: inc/field-groups.php:77
 msgid "Country analysis"
 msgstr ""
 
@@ -461,130 +461,176 @@ msgstr ""
 msgid "Details and comments"
 msgstr ""
 
-#: inc/themes.php:19
+#: inc/themes.php:20
 msgctxt "post type general name"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:20
+#: inc/themes.php:21
 msgctxt "post type singular name"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:21
+#: inc/themes.php:22
 msgctxt "admin menu"
 msgid "Themes"
 msgstr ""
 
-#: inc/themes.php:22
+#: inc/themes.php:23
 msgctxt "add new on admin bar"
 msgid "Theme"
 msgstr ""
 
-#: inc/themes.php:23
+#: inc/themes.php:24
 msgctxt "theme"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:24
+#: inc/themes.php:25
 msgid "Add new theme"
 msgstr ""
 
-#: inc/themes.php:25
+#: inc/themes.php:26
 msgid "New theme"
 msgstr ""
 
-#: inc/themes.php:26
+#: inc/themes.php:27
 msgid "Edit theme"
 msgstr ""
 
-#: inc/themes.php:27
+#: inc/themes.php:28
 msgid "View theme"
 msgstr ""
 
-#: inc/themes.php:28
+#: inc/themes.php:29
 msgid "All themes"
 msgstr ""
 
-#: inc/themes.php:29
+#: inc/themes.php:30
 msgid "Search themes"
 msgstr ""
 
-#: inc/themes.php:30
+#: inc/themes.php:31
 msgid "Parent themes:"
 msgstr ""
 
-#: inc/themes.php:31
+#: inc/themes.php:32
 msgid "No themes found."
 msgstr ""
 
-#: inc/themes.php:32
+#: inc/themes.php:33
 msgid "No themes found in trash."
 msgstr ""
 
-#: inc/themes.php:36 inc/themes.php:71
+#: inc/themes.php:37 inc/themes.php:72
 msgid "CLADE Theme Groups"
 msgstr ""
 
-#: inc/themes.php:54
+#: inc/themes.php:55
 msgctxt "post type general name"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:55
+#: inc/themes.php:56
 msgctxt "post type singular name"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:56
+#: inc/themes.php:57
 msgctxt "admin menu"
 msgid "Theme groups"
 msgstr ""
 
-#: inc/themes.php:57
+#: inc/themes.php:58
 msgctxt "add new on admin bar"
 msgid "Theme group"
 msgstr ""
 
-#: inc/themes.php:58
+#: inc/themes.php:59
 msgctxt "theme group"
 msgid "Add new"
 msgstr ""
 
-#: inc/themes.php:59
+#: inc/themes.php:60
 msgid "Add new theme group"
 msgstr ""
 
-#: inc/themes.php:60
+#: inc/themes.php:61
 msgid "New theme group"
 msgstr ""
 
-#: inc/themes.php:61
+#: inc/themes.php:62
 msgid "Edit theme group"
 msgstr ""
 
-#: inc/themes.php:62
+#: inc/themes.php:63
 msgid "View theme group"
 msgstr ""
 
-#: inc/themes.php:63
+#: inc/themes.php:64
 msgid "All theme groups"
 msgstr ""
 
-#: inc/themes.php:64
+#: inc/themes.php:65
 msgid "Search theme groups"
 msgstr ""
 
-#: inc/themes.php:65
+#: inc/themes.php:66
 msgid "Parent theme groups:"
 msgstr ""
 
-#: inc/themes.php:66
+#: inc/themes.php:67
 msgid "No theme groups found."
 msgstr ""
 
-#: inc/themes.php:67
+#: inc/themes.php:68
 msgid "No theme groups found in trash."
+msgstr ""
+
+#: inc/themes.php:90
+msgctxt "taxonomy general name"
+msgid "Theme group categories"
+msgstr ""
+
+#: inc/themes.php:91
+msgctxt "taxonomy singular name"
+msgid "Theme group category"
+msgstr ""
+
+#: inc/themes.php:92
+msgid "Search theme group categories"
+msgstr ""
+
+#: inc/themes.php:93
+msgid "All theme group categories"
+msgstr ""
+
+#: inc/themes.php:94
+msgid "Parent theme group category"
+msgstr ""
+
+#: inc/themes.php:95
+msgid "Parent theme group category:"
+msgstr ""
+
+#: inc/themes.php:96
+msgid "Edit theme group category"
+msgstr ""
+
+#: inc/themes.php:97
+msgid "Update theme group category"
+msgstr ""
+
+#: inc/themes.php:98
+msgid "Add new theme group category"
+msgstr ""
+
+#: inc/themes.php:99
+msgid "New theme group category name"
+msgstr ""
+
+#: inc/themes.php:100
+msgid "Theme group categories"
 msgstr ""
 
 #: parts/theme-item.php:133 parts/theme-item.php:148 parts/theme-item.php:161
@@ -597,4 +643,8 @@ msgstr ""
 
 #: taxonomy-country.php:23
 msgid "Download analysis"
+msgstr ""
+
+#: taxonomy-country.php:57
+msgid "General comments"
 msgstr ""

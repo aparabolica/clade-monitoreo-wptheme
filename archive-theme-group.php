@@ -4,7 +4,11 @@
   <header class="page-header">
     <div class="container">
       <div class="twelve columns">
-        <h1><?php _e('Analysis', 'clade'); ?></h1>
+        <?php if(is_taxonomy('theme-group-category')) : ?>
+          <h1><?php single_term_title(); ?></h1>
+        <?php else : ?>
+          <h1><?php _e('Analysis', 'clade'); ?></h1>
+        <?php endif; ?>
         <nav class="page-header-nav">
           <?php while(have_posts()) : the_post(); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

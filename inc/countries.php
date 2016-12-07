@@ -13,7 +13,6 @@ class Clade_Countries {
   }
 
   function register_taxonomy() {
-    // Add new taxonomy, make it hierarchical (like categories)
     $labels = array(
       'name'              => _x( 'Countries', 'taxonomy general name', 'clade' ),
       'singular_name'     => _x( 'Country', 'taxonomy singular name', 'clade' ),

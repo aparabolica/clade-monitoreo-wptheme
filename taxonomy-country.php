@@ -54,7 +54,7 @@ $analysis = get_field('country_analysis', $term);
           <div class="container">
             <div class="twelve columns">
               <div class="section-title">
-                <h2 class="h"><?php _e('Country analysis', 'clade'); ?></h2>
+                <h2 class="h"><?php _e('General comments', 'clade'); ?></h2>
               </div>
               <div class="analysis-content">
                 <?php echo $analysis; ?>

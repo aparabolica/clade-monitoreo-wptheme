@@ -10,6 +10,7 @@ class Clade_Themes {
   function __construct() {
     add_action('init', array($this, 'register_theme_post_type'));
     add_action('init', array($this, 'register_theme_group_post_type'));
+    add_action('init', array($this, 'register_theme_group_taxonomy'));
     add_action('pre_get_posts', array($this, 'pre_get_posts'));
     add_shortcode('theme', array($this, 'theme_shortcode'));
   }
@@ -83,6 +84,32 @@ class Clade_Themes {
     );
     register_post_type( 'theme-group', $args );
   }
+
+  function register_theme_group_taxonomy() {
+    $labels = array(
+      'name'              => _x( 'Theme group categories', 'taxonomy general name', 'clade' ),
+      'singular_name'     => _x( 'Theme group category', 'taxonomy singular name', 'clade' ),
+      'search_items'      => __( 'Search theme group categories', 'clade' ),
+      'all_items'         => __( 'All theme group categories', 'clade' ),
+      'parent_item'       => __( 'Parent theme group category', 'clade' ),
+      'parent_item_colon' => __( 'Parent theme group category:', 'clade' ),
+      'edit_item'         => __( 'Edit theme group category', 'clade' ),
+      'update_item'       => __( 'Update theme group category', 'clade' ),
+      'add_new_item'      => __( 'Add new theme group category', 'clade' ),
+      'new_item_name'     => __( 'New theme group category name', 'clade' ),
+      'menu_name'         => __( 'Theme group categories', 'clade' ),
+    );
+    $args = array(
+      'hierarchical'      => true,
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'rewrite'           => array( 'slug' => 'theme-group-category' ),
+    );
+    register_taxonomy( 'theme-group-category', array( 'theme-group' ), $args );
+  }
+
 
   function get_theme($post_id = false) {
     global $post;
