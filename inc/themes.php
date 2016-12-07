@@ -11,7 +11,7 @@ class Clade_Themes {
     add_action('init', array($this, 'register_theme_post_type'));
     add_action('init', array($this, 'register_theme_group_post_type'));
     add_action('init', array($this, 'register_theme_group_taxonomy'));
-    add_action('pre_get_posts', array($this, 'pre_get_posts'));
+    // add_action('pre_get_posts', array($this, 'pre_get_posts'));
     add_shortcode('theme', array($this, 'theme_shortcode'));
   }
 
@@ -78,7 +78,7 @@ class Clade_Themes {
       'rewrite'            => array( 'slug' => 'theme-groups' ),
       'capability_type'    => 'post',
       'has_archive'        => true,
-      'hierarchical'       => false,
+      'hierarchical'       => true,
       'menu_position'      => 5,
       'supports'           => array( 'title', 'editor', 'excerpt', 'page-attributes' )
     );
