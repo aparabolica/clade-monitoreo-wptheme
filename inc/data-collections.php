@@ -23,7 +23,7 @@ function clade_data_download_button() {
   $href = $files[0]['url'];
 
   if(count($files) > 1) :
-    $tag = 'button';
+    $tag = 'span';
     $href = '';
   endif;
   ?>
