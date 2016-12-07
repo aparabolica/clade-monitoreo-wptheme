@@ -4,7 +4,7 @@
   <header class="page-header">
     <div class="container">
       <div class="twelve columns">
-        <?php if(is_taxonomy('theme-group-category')) : ?>
+        <?php if(is_tax('theme-group-category')) : ?>
           <h1><?php single_term_title(); ?></h1>
         <?php else : ?>
           <h1><?php _e('Analysis', 'clade'); ?></h1>
