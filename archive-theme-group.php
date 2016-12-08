@@ -9,11 +9,13 @@
         <?php else : ?>
           <h1><?php _e('Analysis', 'clade'); ?></h1>
         <?php endif; ?>
+        <?php /*
         <nav class="page-header-nav">
           <?php while(have_posts()) : the_post(); ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           <?php endwhile; ?>
         </nav>
+        */ ?>
       </div>
     </div>
   </header>

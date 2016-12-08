@@ -11,7 +11,7 @@ class Clade_Themes {
     add_action('init', array($this, 'register_theme_post_type'));
     add_action('init', array($this, 'register_theme_group_post_type'));
     add_action('init', array($this, 'register_theme_group_taxonomy'));
-    // add_action('pre_get_posts', array($this, 'pre_get_posts'));
+    add_action('pre_get_posts', array($this, 'pre_get_posts'));
     add_shortcode('theme', array($this, 'theme_shortcode'));
   }
 
@@ -150,8 +150,12 @@ class Clade_Themes {
 
   function pre_get_posts($query) {
 
-    if($query->get('post_type') == 'theme-group' || $query->get('post_type') == array('theme-group')) {
-      $query->set('order_by', 'menu_order');
+    if(
+      $query->get('post_type') == 'theme-group' ||
+      $query->get('post_type') == array('theme-group') ||
+      $query->get('theme-group-category')
+    ) {
+      $query->set('orderby', 'menu_order');
       $query->set('order', 'ASC');
     }
 
