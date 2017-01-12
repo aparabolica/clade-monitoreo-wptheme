@@ -132,17 +132,27 @@ require_once(TEMPLATEPATH . '/inc/theme-query.php');
 require_once(TEMPLATEPATH . '/inc/field-groups.php');
 
 /**
+ * Custm mime types
+ */
+function clade_mime_types($types) {
+  $types['csv'] = 'text/csv';
+  return $types;
+}
+add_filter('upload_mimes', 'clade_mime_types');
+
+
+/**
  * Get first paragraph from a WordPress post. Use inside the Loop.
  *
  * @return string
  */
 function get_first_paragraph() {
-	global $post;
+  global $post;
 
-	$str = apply_filters( 'the_content', get_the_content() );
-	$str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
-	$str = strip_tags($str, '<a><strong><em>');
-	return '<p>' . $str . '</p>';
+  $str = apply_filters( 'the_content', get_the_content() );
+  $str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
+  $str = strip_tags($str, '<a><strong><em>');
+  return '<p>' . $str . '</p>';
 }
 
 /**
