@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: clade 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-07 12:57-0200\n"
-"PO-Revision-Date: 2016-12-08 17:29-0200\n"
+"POT-Creation-Date: 2017-02-07 15:56-0200\n"
+"PO-Revision-Date: 2017-02-07 16:00-0200\n"
 "Last-Translator: Miguel Peixe <miguspeixe@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/ecologia-digital/"
 "teams/68900/es/)\n"
@@ -22,6 +22,26 @@ msgstr ""
 #: archive-theme-group.php:10 homepage.php:29
 msgid "Analysis"
 msgstr "Análisis"
+
+#. /a>
+#. <?php endwhile; ?>
+#. </nav>
+#. clade_country_list();
+#: footer.php:17
+msgid "Create Commons License"
+msgstr "Licencia de Creative Commons"
+
+#: footer.php:18
+msgid "This work is licensed under a"
+msgstr "Este obra está bajo una"
+
+#: footer.php:18
+msgid ""
+"Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International "
+"License"
+msgstr ""
+"licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 "
+"Internacional"
 
 #: functions.php:63
 msgid "Header navigation"
