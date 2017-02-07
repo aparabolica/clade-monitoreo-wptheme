@@ -449,6 +449,52 @@ acf_add_local_field_group(array (
 			'return_format' => 'id',
 			'ui' => 1,
 		),
+		array (
+			'key' => 'field_link_analysis_archive',
+			'label' => 'Link to analysis archive',
+			'name' => 'link_analysis_archive',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => 'Link should go to analysis archive',
+			'default_value' => 1,
+		),
+		array (
+			'key' => 'field_theme_group_category',
+			'label' => 'Theme group category',
+			'name' => 'theme_group_category',
+			'type' => 'taxonomy',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array (
+				array (
+					array (
+						'field' => 'field_link_analysis_archive',
+						'operator' => '!=',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'taxonomy' => 'theme-group-category',
+			'field_type' => 'radio',
+			'allow_null' => 0,
+			'add_term' => 1,
+			'save_terms' => 0,
+			'load_terms' => 0,
+			'return_format' => 'id',
+			'multiple' => 0,
+		),
 	),
 	'location' => array (
 		array (
